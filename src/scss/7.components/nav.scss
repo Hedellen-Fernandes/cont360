@@ -3,14 +3,19 @@
     left: 0;
     position: absolute;
 
-    width: 100vw;
+    width: 40px;
     height: 100vh;
 
-    background: $color-white;
+    background: $color-primary;
 
-    z-index: 2;
+	z-index: 2;
 
-    display: none !important;
+	will-change: transition;
+	@include transition(.35s cubic-bezier(.51,.92,.24,1.15));
+
+	&.active {
+		width: 400px;
+	}
 
     ul, li {
         padding: 0;
