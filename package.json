@@ -1,16 +1,16 @@
 {
-    "name": "mora-ar",
+    "name": "cont-260",
     "version": "1.0.0",
-    "description": "Institutional Website",
+    "description": "Confidencial Project",
     "main": "./src/js/index.js",
     "scripts": {
         "build": "webpack --config webpack.prod.js",
-        "start": "webpack-dev-server --config webpack.dev.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack-dev-server --config webpack.prod.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Hedellen-Fernandes/mora-ar-2020.git"
+        "url": "git+https://github.com/Hedellen-Fernandes/cont-360.git"
     },
     "keywords": [
         "Website"
@@ -18,9 +18,9 @@
     "author": "Hedellen Fernandes",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Hedellen-Fernandes/mora-ar-2020/issues"
+        "url": "https://github.com/Hedellen-Fernandes/cont-360/issues"
     },
-    "homepage": "https://github.com/Hedellen-Fernandes/mora-ar-2020#readme",
+    "homepage": "https://github.com/Hedellen-Fernandes/cont-360#readme",
     "devDependencies": {
         "@babel/core": "^7.6.0",
         "@babel/preset-env": "^7.6.0",
@@ -29,7 +29,7 @@
         "babel-eslint": "^10.0.3",
         "babel-loader": "^8.0.6",
         "css-loader": "^3.2.0",
-        "eslint": "^6.5.1",
+        "eslint": "^6.6.0",
         "eslint-config-standard": "^14.1.0",
         "eslint-loader": "^3.0.0",
         "eslint-plugin-import": "^2.18.2",
@@ -40,6 +40,7 @@
         "imagemin-webpack-plugin": "^2.4.2",
         "mini-css-extract-plugin": "^0.8.0",
         "postcss-loader": "^3.0.0",
+        "react-scripts": "^3.0.1",
         "sass": "^1.22.12",
         "sass-loader": "^8.0.0",
         "webpack": "^4.40.2",
