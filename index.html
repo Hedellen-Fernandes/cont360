@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+	<!--
 	<div id="nav" class="menu d-flex flex-column justify-content-center align-items-center">
 		<button class="fechar btn btn-link">
 			<img src="./src/img/icones/fechar.svg" class="d-inline-block align-top" alt="Fechar Menu">
@@ -23,13 +23,42 @@
 			<li><a href="#">Diferenciais</a></li>
 			<li><a href="#">Contato</a></li>
 		</ul>
-	</div>
+	</div> -->
 
-	<nav class="navbar navbar-light">
+	<nav class="navbar navbar-dark navbar-expand-lg fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<!-- <img src="./src/img/icones/logotipo_branco.svg" class="d-inline-block align-top" alt="Moraar"> -->
+				<img src="./dist/img/logo-cont-360.svg" class="d-inline-block align-top" alt="Moraar">
 			</a>
+			<div class="collapse navbar-collapse">
+				<select class="custom-select col-md-2 mr-auto">
+					<option selected>AGL SOLUTIONS</option>
+				</select>
+
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 

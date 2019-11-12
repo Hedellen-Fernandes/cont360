@@ -1,0 +1,12 @@
+<svg id="responder" xmlns="http://www.w3.org/2000/svg" width="11.248" height="8.436" viewBox="0 0 11.248 8.436">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #404e67;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_115" data-name="Grupo 115" transform="translate(0 0)">
+    <path id="Caminho_184" data-name="Caminho 184" class="cls-1" d="M.01,72.134A6.1,6.1,0,0,1,6.1,66.347V64.7a.7.7,0,0,1,.7-.7.694.694,0,0,1,.473.188s2.962,2.742,3.814,3.6a.658.658,0,0,1,0,.865c-.852.855-3.814,3.6-3.814,3.6a.694.694,0,0,1-.473.188.7.7,0,0,1-.7-.7V70.094C2.725,70.142.477,71.206.477,72.2a.234.234,0,0,1-.234.234H.234a.235.235,0,0,1-.225-.3Z" transform="translate(0 -64)"/>
+  </g>
+</svg>

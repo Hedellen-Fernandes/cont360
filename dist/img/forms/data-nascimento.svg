@@ -1,0 +1,24 @@
+<svg id="Grupo_243" data-name="Grupo 243" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #404e67;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_241" data-name="Grupo 241">
+    <g id="Grupo_240" data-name="Grupo 240">
+      <circle id="Elipse_1" data-name="Elipse 1" class="cls-1" cx="1" cy="1" r="1" transform="translate(18 10)"/>
+      <path id="Caminho_200" data-name="Caminho 200" class="cls-1" d="M21.938,2.031h-1.32V1.016a1.016,1.016,0,0,0-2.031,0V2.031H13.965V1.016a1.016,1.016,0,0,0-2.031,0V2.031H7.363V1.016a1.016,1.016,0,0,0-2.031,0V2.031H4.063A4.067,4.067,0,0,0,0,6.094V21.938A4.067,4.067,0,0,0,4.063,26h7.77a1.016,1.016,0,0,0,0-2.031H4.063a2.034,2.034,0,0,1-2.031-2.031V6.094A2.034,2.034,0,0,1,4.063,4.063h1.27V5.078a1.016,1.016,0,0,0,2.031,0V4.063h4.57V5.078a1.016,1.016,0,0,0,2.031,0V4.063h4.621V5.078a1.016,1.016,0,0,0,2.031,0V4.063h1.32a2.034,2.034,0,0,1,2.031,2.031v5.789a1.016,1.016,0,0,0,2.031,0V6.094A4.067,4.067,0,0,0,21.938,2.031Z"/>
+      <path id="Caminho_201" data-name="Caminho 201" class="cls-1" d="M276.145,270a6.145,6.145,0,1,0,6.145,6.145A6.151,6.151,0,0,0,276.145,270Zm0,10.258a4.113,4.113,0,1,1,4.113-4.113A4.118,4.118,0,0,1,276.145,280.258Z" transform="translate(-256.289 -256.289)"/>
+      <path id="Caminho_202" data-name="Caminho 202" class="cls-1" d="M373.488,332.082h-.457v-1.066a1.016,1.016,0,0,0-2.031,0V333.1a1.016,1.016,0,0,0,1.016,1.016h1.473a1.016,1.016,0,0,0,0-2.031Z" transform="translate(-352.16 -313.242)"/>
+      <circle id="Elipse_2" data-name="Elipse 2" class="cls-1" cx="1" cy="1" r="1" transform="translate(14 10)"/>
+      <circle id="Elipse_3" data-name="Elipse 3" class="cls-1" cx="1" cy="1" r="1" transform="translate(10 14)"/>
+      <circle id="Elipse_4" data-name="Elipse 4" class="cls-1" cx="1" cy="1" r="1" transform="translate(6 10)"/>
+      <circle id="Elipse_5" data-name="Elipse 5" class="cls-1" cx="1" cy="1" r="1" transform="translate(6 14)"/>
+      <circle id="Elipse_6" data-name="Elipse 6" class="cls-1" cx="1" cy="1" r="1" transform="translate(6 18)"/>
+      <circle id="Elipse_7" data-name="Elipse 7" class="cls-1" cx="1" cy="1" r="1" transform="translate(10 18)"/>
+      <circle id="Elipse_8" data-name="Elipse 8" class="cls-1" cx="1" cy="1" r="1" transform="translate(10 10)"/>
+    </g>
+  </g>
+</svg>

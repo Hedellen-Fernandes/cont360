@@ -1,0 +1,38 @@
+/*  ==========================================================================
+    Selects
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+     @media only screen {
+		.custom-select {
+			background: transparent;
+
+			color: $color-white;
+
+			border: 2px solid $color-gray-dark;
+
+			-webkit-appearance: none;
+			-moz-appearance:    none;
+			appearance:         none;
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

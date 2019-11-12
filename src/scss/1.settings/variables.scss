@@ -11,13 +11,13 @@ Variables
 	/*  ==========================================================================
 	Fonts
 	========================================================================== */
-		$font-family: "Times new Roman";
+		$font-family: inherit;
 
 	 /*  ==========================================================================
         Colors
         ========================================================================== */
         /* Brand */
-        $color-primary:     #04202E;
+        $color-primary:     #2AA6FD;
         $color-secondary:   #5CB85C;
         $color-tertiary:    #D9534F;
 
@@ -26,13 +26,13 @@ Variables
         $color-gray-lightest: #EEE;
         $color-gray-light:    #f3f3f3;
         $color-gray:          #707070;
-        $color-gray-dark:     #666;
-        $color-gray-darkest:  #04202E;
+        $color-gray-dark:     #515F75;
+        $color-gray-darkest:  #404E67;
         $color-black:         #222;
         $color-default:       $color-gray;
 
         /* Alert */
-        $color-info:          #457eaf;
+        $color-info:          #8AD6FD;
         $color-info-light:    #cfe6f7;
         $color-warning:       #f79303;
         $color-warning-light: #fff4c6;
