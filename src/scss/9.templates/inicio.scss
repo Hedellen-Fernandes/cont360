@@ -1,12 +1,32 @@
 /*  ==========================================================================
-    Layout
+    Inicio
     ========================================================================== */
 
     /*
      * CSS for all devices
      */
 
-	@media only screen {
+     @media only screen {
+		#inicio {
+			#feedContainer {
+				height: calc(100vh - 58px);
+
+				border-right: 1px solid $color-gray-lightest;
+
+				#feedScrollable {
+					padding-left: 50px;
+					padding-right: 50px;
+
+					overflow-y: scroll;
+				}
+
+				.header, .header-title {
+					@extend #feedScrollable;
+
+					overflow-y: visible;
+				}
+			}
+		}
     }
 
 

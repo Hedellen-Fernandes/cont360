@@ -1,12 +1,17 @@
 /*  ==========================================================================
-    Layout
+    Badges
     ========================================================================== */
 
     /*
      * CSS for all devices
      */
 
-	@media only screen {
+	 @media only screen {
+		.badge {
+			&.badge-primary {
+				background: $color-primary;
+			}
+		}
     }
 
 

@@ -1,0 +1,13 @@
+/*  ==========================================================================
+    Fonts
+    ========================================================================== */
+
+    /*  ==========================================================================
+    Urwdin
+    ========================================================================== */
+    @include font-face($font-family, fonts/segoe/segoe-thin, 100, null, ttf);
+    @include font-face($font-family, fonts/segoe/segoe-light, 300, null, ttf);
+    @include font-face($font-family, fonts/segoe/segoe, 400, null, ttf);
+    @include font-face($font-family, fonts/segoe/segoe-semi-bold, 600, null, ttf);
+    @include font-face($font-family, fonts/segoe/segoe-bold, 700, null, ttf);
+    @include font-face($font-family, fonts/segoe/segoe-black, 900, null, ttf);

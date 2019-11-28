@@ -10,40 +10,45 @@
         .icon {
             display: inline-block;
 
-            &.whatsapp {
-                width: 17px;
-                height: 17px;
+            &.notification {
+                width: 20px;
+                height: 25px;
 
-                margin-left: 10px;
-
-                background: url(./src/img/icones/whatsapp_preto.svg) center center no-repeat;
-                background-size: cover;
-
-                @include transform(translateY(2px));
-
-                &.white {
-                    background: url(./src/img/icones/whatsapp_branco.svg) center center no-repeat;
-                    background-size: cover;
-                }
-            }
-
-            &.arrow-down {
-                width: 10px;
-                height: 10px;
-
-                background: url(./src/img/icones/seta_azul.svg) center center no-repeat;
-                background-size: 100%;
-            }
-
-            &.arrow-right {
-                width: 10px;
-                height: 10px;
-
-                background: url(./src/img/icones/seta_branca.svg) center center no-repeat;
+                background: url(./img/icons/notification.svg) center center no-repeat;
                 background-size: 100%;
 
-                @include transform(rotate(-90deg));
-            }
+                @include transform(translateY(0px));
+			}
+
+			&.like {
+				width: 13px;
+                height: 13px;
+
+                background: url(./img/icons/curtir.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(0px));
+			}
+
+			&.comment {
+				width: 13px;
+                height: 11px;
+
+                background: url(./img/icons/comentar.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(0px));
+			}
+
+			&.delete {
+				width: 16px;
+                height: 18px;
+
+                background: url(./img/icons/mensagens/excluir-mensagem-ativa.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(0px));
+			}
         }
     }
 

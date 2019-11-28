@@ -15,6 +15,10 @@ html {
 }
 
 body {
+	padding-top: 3.625rem;
+
+	background: $color-gray-light;
+
     overflow-x: hidden;
     font-family: $font-family;
 }
@@ -27,3 +31,20 @@ iframe { max-width: 100%; }
 img { height: auto; }
 
 * { @include box-sizing(); }
+
+.container {
+	position: relative;
+}
+
+section {
+	.container {
+		background: $color-white;
+	}
+}
+
+
+@media (min-width: 1200px) {
+    .container{
+        min-width: 1200px;
+    }
+}
