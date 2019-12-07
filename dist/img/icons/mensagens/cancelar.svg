@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="10.318" height="10.318" viewBox="0 0 10.318 10.318">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #ff5e5e;
-      }
-    </style>
-  </defs>
-  <g id="Grupo_128" data-name="Grupo 128" transform="translate(-914.282 -356.782)">
-    <rect id="Retângulo_26" data-name="Retângulo 26" class="cls-1" width="3.072" height="11.519" transform="translate(922.428 356.782) rotate(45)"/>
-    <rect id="Retângulo_27" data-name="Retângulo 27" class="cls-1" width="3.072" height="11.519" transform="translate(924.6 364.928) rotate(135)"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="10.318" height="10.318"><defs><style>.cls-1{fill:#ff5e5e}</style></defs><g id="Grupo_128" data-name="Grupo 128" transform="translate(-914.282 -356.782)"><path id="Retângulo_26" data-name="Retângulo 26" class="cls-1" transform="rotate(45 30.54 1291.86)" d="M0 0h3.072v11.519H0z"/><path id="Retângulo_27" data-name="Retângulo 27" class="cls-1" transform="rotate(135 386.72 373.955)" d="M0 0h3.072v11.519H0z"/></g></svg>

@@ -702,10 +702,47 @@
 						<h2>Mensagens</h2>
 					</div>
 					<div class="row header pb-2">
-						<div class="col-12">
-							<button type="button" class="btn btn-outline-primary">
+						<div class="col-12 message-box">
+							<!-- <button type="button" class="btn btn-outline-primary">
 								Nova Mensagem
-							</button>
+							</button> -->
+							<div id="header" class="row">
+								<div class="users col-7">
+									<span class="user-selected d-flex justify-content-start align-items-center">
+										Thiago Caldas
+										<span class="icon close-danger"></span>
+									</span>
+								</div>
+								<div class="group col-5 d-flex justify-content-end align-items-center">
+									<div class="d-flex justify-content-end align-items-center">
+										<label for="#todosDe">Todos de:</label>
+										<select id="todosDe" class="custom-select">
+											<option selected>SELECIONE</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+									placeholder="Mensagem"></textarea>
+							</div>
+							<div class="row  d-flex justify-content-end align-items-center">
+								<button type="button" class="btn btn-link">
+									<i class="icon attachament"></i>
+									Anexar arquivo
+								</button>
+								<button type="button" class="btn btn-link">
+									<i class="icon close-danger"></i>
+									Cancelar
+								</button>
+								<button type="button" class="btn btn-link">
+									<i class="icon send"></i>
+									Enviar
+								</button>
+							</div>
 						</div>
 					</div>
 					<section id="feedScrollable"

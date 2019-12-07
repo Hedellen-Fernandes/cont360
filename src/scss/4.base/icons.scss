@@ -49,6 +49,36 @@
 
                 @include transform(translateY(0px));
 			}
+
+			&.close-danger {
+				width: 14px;
+                height: 14px;
+
+                background: url(./img/icons/mensagens/cancelar.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(1px));
+			}
+
+			&.send {
+				width: 14px;
+                height: 14px;
+
+                background: url(./img/icons/mensagens/enviar.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(1px));
+			}
+
+			&.attachament {
+				width: 9px;
+                height: 18px;
+
+                background: url(./img/icons/mensagens/anexar-arquivo.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
         }
     }
 

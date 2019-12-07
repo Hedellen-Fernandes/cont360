@@ -25,6 +25,89 @@
 
 					overflow-y: visible;
 				}
+
+				.header {
+					padding-left: 3.4375rem;
+					padding-left: 3.4375rem;
+
+					.message-box {
+						padding-bottom: 1.5625rem;
+
+						border-bottom: 0.0625rem solid $color-gray-border;
+
+						#header {
+							margin-bottom: 0.3125rem;
+							padding: 0.5313rem 0 0.6563rem;
+
+							border: 1px solid $color-gray-border;
+
+							@include border-radius(3px);
+						}
+
+						.user-selected {
+							line-height: 15px;
+							font-size: 15px;
+							font-weight: 100;
+
+							span {
+								margin-left: 10px;
+							}
+						}
+
+						.group {
+							label {
+								margin: 0;
+
+								line-height: 15px;
+								font-size: 15px;
+								font-weight: 100;
+
+								white-space: pre;
+							}
+
+							select {
+								padding: 0 40px 0 0;
+								margin: 0 0 0 10px;
+
+								width: auto;
+
+								font-size: 15px;
+								color: rgba($color-gray-darkest, 0.25);
+
+								border: none;
+							}
+						}
+
+						textarea {
+							margin-bottom: 10px;
+							padding: 0.625rem 0.9375rem;
+
+							font-weight: 100;
+						}
+
+						.btn {
+							padding-top: 4px;
+							padding-bottom: 4px;
+
+							font-weight: 100;
+							font-size: 16px;
+							color: $color-gray-darkest;
+
+							i {
+								margin-right: 5px;
+							}
+
+							&:nth-child(2) {
+								border-right: 1px solid $color-gray-border;
+								border-left: 1px solid $color-gray-border;
+							}
+
+							&:last-child {
+								padding-right: 0;
+							}
+						}
+					}
+				}
 			}
 		}
     }
