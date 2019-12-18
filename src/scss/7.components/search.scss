@@ -1,0 +1,66 @@
+/*  ==========================================================================
+    Search
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.search {
+			padding: 0.9375rem 0;
+
+			form {
+				display: flex;
+
+				padding: 1.5625rem 0;
+				margin: 0;
+
+				border-top: 1px solid $color-gray-lightest;
+				border-bottom: 1px solid $color-gray-lightest;
+
+				input {
+					padding: 0;
+
+					width: calc(100% - 45px);
+
+					font-weight: 100;
+
+					border: none;
+
+					visibility: none;
+				}
+
+				.btn {
+					padding: 0;
+
+					width: 37px;
+					height: 37px;
+
+					border: none;
+					@include border-radius(100%);
+
+					svg {
+						fill: $color-gray-darkest;
+					}
+				}
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

@@ -1,0 +1,61 @@
+/*  ==========================================================================
+    Switches
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.custom-switch {
+			overflow: visible;
+
+			.custom-control-label {
+				&::after {
+					top: calc(0.25rem + 1.5px);
+					left: calc(-2.25rem - 15px);
+
+					width: 0.9375rem;
+					height: 0.9375rem;
+
+					background-color: $color-primary;
+				}
+
+				&::before {
+					top: 2px;
+					left: -3.4375rem;
+
+					width: 2.75rem;
+					height: 1.375rem;
+
+					border-radius: 0.6875rem;
+				}
+			}
+			.custom-control-label, span {
+				color: $color-gray-darkest;
+				font-weight: 100;
+			}
+
+			span {
+				position: relative;
+				right: 65px;
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

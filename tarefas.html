@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Cont 360 - Início</title>
+	<title>Cont 360 - Tarefas</title>
 
 	<link rel="stylesheet" href="./dist/bundle.css">
 </head>
@@ -36,7 +36,7 @@
 		</div>
 	</nav>
 
-	<section id="inicio">
+	<section id="tarefas">
 		<div class="container">
 			<div id="nav" class="menu d-flex flex-column justify-content-start align-items-center">
 				<ul class="menu-items">
@@ -100,7 +100,7 @@
 								</button>
 							</form>
 						</div>
-						<a href="#" class="flex-row justify-content-start align-items-center">
+						<a href="tarefas.html" class="flex-row justify-content-start align-items-center">
 							<svg data-name="Grupo 99" xmlns="http://www.w3.org/2000/svg" width="17.272" height="17.269">
 								<g data-name="Grupo 98">
 									<path data-name="Caminho 177"
@@ -110,7 +110,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="./tarefas.html" class="d-flex flex-row justify-content-start align-items-center">
+						<a href="#" class="d-flex flex-row justify-content-start align-items-center">
 							<svg id="_019-evaluation" data-name="019-evaluation" xmlns="http://www.w3.org/2000/svg"
 								width="26.661" height="26.661">
 								<g id="Grupo_33" data-name="Grupo 33">
@@ -696,236 +696,129 @@
 				</ul>
 			</div>
 			<div class="row">
-				<div class="col-7 offset-1 d-flex flex-column justify-content-start align-items-stretch"
-					id="feedContainer">
+				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
 					<div class="row header-title">
-						<h2>Mensagens</h2>
-					</div>
-					<div class="row header pb-2">
-						<div class="col-12 message-box">
-							<!-- <button type="button" class="btn btn-outline-primary">
-								Nova Mensagem
-							</button> -->
-							<div id="header" class="row">
-								<div class="users col-7">
-									<span class="user-selected d-flex justify-content-start align-items-center">
-										Thiago Caldas
-										<span class="icon close-danger"></span>
-									</span>
-								</div>
-								<div class="group col-5 d-flex justify-content-end align-items-center">
-									<div class="d-flex justify-content-end align-items-center">
-										<label for="#todosDe">Todos de:</label>
-										<select id="todosDe" class="custom-select">
-											<option selected>SELECIONE</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-									placeholder="Mensagem"></textarea>
-							</div>
-							<div class="row  d-flex justify-content-end align-items-center">
-								<button type="button" class="btn btn-link">
-									<i class="icon attachament"></i>
-									Anexar arquivo
-								</button>
-								<button type="button" class="btn btn-link">
-									<i class="icon close-danger"></i>
-									Cancelar
-								</button>
-								<button type="button" class="btn btn-link">
-									<i class="icon send"></i>
-									Enviar
-								</button>
+						<h2 class="col-1">Tarefas</h2>
+						<div class="col-4 d-flex flex-row justify-content-start align-items-end">
+							<div class="custom-control custom-switch">
+								<span>Lista</span>
+								<input type="checkbox" class="custom-control-input" id="customSwitch1">
+								<label class="custom-control-label" for="customSwitch1">Kanban</label>
 							</div>
 						</div>
 					</div>
-					<section id="feedScrollable"
-						class="d-flex flex-column justify-content-start align-items-stretch h-100">
-						<div class="content h-100">
-
-							<div class="feed-publication d-flex flex-row justify-content-start align-items-stretch">
-								<span class="publication-avatar">
-									<img src="./dist/img/avatar/avatar-2x.png" alt="Foto usuário"
-										class="rounded-circle w-100">
-								</span>
-
-								<div class="publication-content w-100">
-									<div class="publication-details">
-										<div class="d-flex flex-row justify-content-start align-items-end">
-											<h3>Fábio Cavalcante </h3>
-											<span class="badge badge-pill badge-primary">AGL SOLUTIONS</span>
-										</div>
-										<time>11/10/2019 - 10:00</time>
-									</div>
-									<div class="publication-text w-100">
-										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit similique
-											neque soluta fuga molestias voluptates consequuntur?</p>
-									</div>
-									<div
-										class="publication-actions d-flex flex-row justify-content-end align-items-center">
-										<button type="button" class="btn btn-link">
-											<span class="icon like"></span>
-											Curtir
-										</button>
-										<button type="button" class="btn btn-link">
-											<span class="icon comment"></span>
-											Comentar
-										</button>
-									</div>
-								</div>
-							</div>
-
-							<div class="feed-publication">
-								<div class="d-flex flex-row justify-content-start align-items-stretch">
-									<span class="publication-avatar">
-										<img src="./dist/img/avatar/avatar-2x.png" alt="Foto usuário"
-											class="rounded-circle w-100">
-									</span>
-
-									<div class="publication-content w-100">
-										<div class="publication-details">
-											<div class="d-flex flex-row justify-content-start align-items-end">
-												<h3>Fábio Cavalcante </h3>
-												<span class="badge badge-pill badge-primary">AGL SOLUTIONS</span>
-											</div>
-											<time>11/10/2019 - 10:00</time>
-										</div>
-										<div class="publication-text w-100">
-											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit similique
-												neque soluta fuga molestias voluptates consequuntur?</p>
-										</div>
-										<div
-											class="publication-actions d-flex flex-row justify-content-end align-items-center">
-											<button type="button" class="btn btn-link">
-												<span class="icon like"></span>
-												Curtir
-											</button>
-											<button type="button" class="btn btn-link">
-												<span class="icon comment"></span>
-												Comentar
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="publication-comments">
-									<div
-										class="publication-comment d-flex flex-row justify-content-end align-items-stretch">
-										<span class="publication-avatar">
-											<img src="./dist/img/avatar/avatar-2x.png" alt="Foto usuário"
-												class="rounded-circle">
-										</span>
-										<div class="publication-content w-100">
-											<div class="publication-details">
-												<small>MARCELO MATTOS - Comentou em 11/05/2019 - 13h44</small>
-											</div>
-											<div class="publication-text w-100">
-												<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-											</div>
-											<div
-												class="publication-actions d-flex flex-row justify-content-end align-items-center">
-												<button type="button" class="btn btn-link">
-													<span class="icon like"></span>
-													Curtir
-												</button>
-												<button type="button" class="btn btn-link">
-													<span class="icon comment"></span>
-													Comentar
-												</button>
-											</div>
-											<div class="publication-comments">
-												<div class="publication-comment">
-
-												</div>
-											</div>
-										</div>
-									</div>
-									<div
-										class="publication-comment my-comment d-flex flex-row justify-content-end align-items-stretch">
-										<span class="publication-avatar">
-											<img src="./dist/img/avatar/avatar-2x.png" alt="Foto usuário"
-												class="rounded-circle">
-										</span>
-										<div class="publication-content w-100">
-											<div class="publication-details">
-												<small>MARCELO MATTOS - Comentou em 11/05/2019 - 13h44</small>
-											</div>
-											<div class="publication-text w-100">
-												<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-
-												<button type="button" class="btn btn-link btn-delete">
-													<span class="icon delete"></span>
-												</button>
-											</div>
-											<div
-												class="publication-actions d-flex flex-row justify-content-end align-items-center">
-												<button type="button" class="btn btn-link">
-													<span class="icon like"></span>
-													Curtir
-												</button>
-												<button type="button" class="btn btn-link">
-													<span class="icon comment"></span>
-													Comentar
-												</button>
-											</div>
-											<div class="publication-comments">
-												<div class="publication-comment">
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+					<div class="row filtros">
+						<div class="search col-4">
+							<form class="form-inline w-100 flex-row justify-content-between align-items-center">
+								<input class="form-control col-10" type="search" placeholder="Pesquisar"
+									aria-label="Pesquisar">
+								<button class="btn btn-info" type="submit">
+									<svg data-name="Grupo 99" xmlns="http://www.w3.org/2000/svg" width="17.272"
+										height="17.269">
+										<g data-name="Grupo 98">
+											<path data-name="Caminho 177"
+												d="M15.437 1.832a6.265 6.265 0 00-9.164 8.535l-.746.746-.76-.76a.444.444 0 00-.628 0L.575 13.916a1.964 1.964 0 102.778 2.778l3.563-3.563a.444.444 0 000-.628l-.76-.76.746-.746a6.265 6.265 0 008.535-9.164zM2.725 16.065A1.077 1.077 0 111.2 14.544l1.992-1.987 1.521 1.52zm2.617-2.617l-1.522-1.52.632-.632 1.521 1.521zm9.467-3.384a5.377 5.377 0 111.575-3.8 5.383 5.383 0 01-1.576 3.8z" />
+										</g>
+									</svg>
+								</button>
+							</form>
 						</div>
-					</section>
+						<div class="filters col-8 d-flex flex-row justify-content-start align-items-center">
+							<form class="form-inline w-100">
+								<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Filtrar por</label>
+								<select class="custom-select mr-auto">
+									<option selected>NOME</option>
+								</select>
+
+								<button type="button" class="btn btn-outline-cont btn-outline-primary">
+									Nova Tarefa
+								</button>
+							</form>
+						</div>
+					</div>
 				</div>
-
-				<aside class="col-4" id="sidebar">
-					<div class="header-title">
-						<h2 class="w-100">Tarefas</h2>
-					</div>
-					<div class="header w-100 d-flex flex-row justify-content-center align-items-center">
-						<button type="button" class="btn btn-outline-primary">
-							Nova Tarefa
-						</button>
-					</div>
-					<div>
-						<table class="table table-bordered">
-							<thead>
-								<tr>
-									<th>Minhas tarefas</th>
-									<th>No prazo</th>
-									<th>Em atraso</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Em andamento</td>
-									<td>5</td>
-									<td>5</td>
-								</tr>
-								<tr>
-									<td>Participando</td>
-									<td>1</td>
-									<td>0</td>
-								</tr>
-								<tr>
-									<td>Criadas por mim</td>
-									<td>1</td>
-									<td>0</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</aside>
 			</div>
+			<section class="row" id="taskList">
+				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
+					<table class="table table-borderless list-itens">
+						<thead>
+							<tr>
+								<th scope="col">Nome</th>
+								<th scope="col">Prazo</th>
+								<th scope="col">Ação Estratégia</th>
+								<th scope="col">Status</th>
+								<th scope="col">Responsável</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<small>Criada por Fábio Cavalcante</small> <br>
+									Olá, thanks!
+								</td>
+								<td>19/10/2019</td>
+								<td>22/09/2019</td>
+								<td>Pendente</td>
+								<td>
+									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar">
+									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar">
+									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar">
+								</td>
+								<td>Ações</td>
+							</tr>
+
+							<tr>
+								<td>
+									<small>Criada por Fábio Cavalcante</small> <br>
+									Olá, thanks!
+								</td>
+								<td>19/10/2019</td>
+								<td>22/09/2019</td>
+								<td>Pendente</td>
+								<td>
+									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar">
+									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar">
+									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar">
+								</td>
+								<td>Ações</td>
+							</tr>
+
+							<tr class="active">
+								<td>
+									<small>Criada por Fábio Cavalcante</small> <br>
+									Olá, thanks!
+								</td>
+								<td>19/10/2019</td>
+								<td>22/09/2019</td>
+								<td>Pendente</td>
+								<td>
+									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar">
+									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar">
+									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar">
+								</td>
+								<td>Ações</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+			<section class="row">
+				<div class="col-11 pr-37 pb-5 offset-1 d-flex flex-row justify-content-end align-items-center">
+					<button type="button" class="btn btn-outline-cont btn-outline-primary">
+						Exportar em lista
+					</button>
+				</div>
+			</section>
 		</div>
 	</section>
 

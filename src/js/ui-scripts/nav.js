@@ -9,6 +9,6 @@ export default function Nav() {
 		else
 			target.classList.add('active')
 
-		event.preventDefault()
+		// event.preventDefault()
 	})
 }

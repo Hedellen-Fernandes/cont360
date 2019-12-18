@@ -13,6 +13,14 @@
 				background: $color-info;
 			}
 
+			&.btn-outline-cont {
+				padding: 0.4375rem 0.9375rem !important;
+
+				min-width: 198px !important;
+				height: auto !important;
+				text-align: left !important;
+			}
+
 			&.btn-outline-primary {
 				padding: 1.125rem 1.5625rem;
 

@@ -1,0 +1,43 @@
+/*  ==========================================================================
+    Tarefas
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	 @media only screen {
+		#tarefas {
+			.header-title {
+				.custom-switch {
+					margin-left: 45px;
+				}
+			}
+
+			#taskList {
+				padding-top: 30px;
+				height: calc(100% - 261px);
+
+				& > div {
+					padding: 0 35px 0 19px;
+				}
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

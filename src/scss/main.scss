@@ -21,6 +21,8 @@
     @import "4.base/typography";
     @import "4.base/buttons";
     @import "4.base/selects";
+    @import "4.base/switches";
+    @import "4.base/tables";
 
 // /* Objects
 //     ========================================================================== */
@@ -34,9 +36,12 @@
     @import "7.components/nav";
     @import "7.components/sidebar";
     @import "7.components/badges";
+    @import "7.components/search";
     @import "7.components/feed-publication";
+    @import "7.components/filters";
 
 // /* Templates
 //     ========================================================================== */
     @import "9.templates/layout";
     @import "9.templates/inicio";
+    @import "9.templates/tarefas";

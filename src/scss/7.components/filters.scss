@@ -1,0 +1,70 @@
+
+/*  ==========================================================================
+    Filters
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.filtros {
+			margin-top: 1px;
+			margin-left: -36px;
+
+			padding: 0 30px 0 35px;
+
+			border-bottom: 1px solid $color-gray-border;
+
+			.search {
+				padding: 0 35px 0 0;
+
+				border-right: 1px solid $color-gray-border;
+
+				form {
+					padding: 20px 0 0;
+					border-bottom: none;
+				}
+			}
+
+			.filters {
+				padding-right: 5px;
+				padding-left: 35px;
+
+				form {
+					padding: 20px 0 0;
+					border-top: 1px solid $color-gray-border;
+
+					label {
+						font-weight: 100;
+					}
+
+					.custom-select {
+						margin-left: 30px;
+
+						width: 198px;
+
+						border-color: $color-gray-border;
+						color: $color-gray-dark;
+					}
+				}
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

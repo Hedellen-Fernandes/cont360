@@ -1,0 +1,92 @@
+/*  ==========================================================================
+    Tables
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.list-itens.table-borderless {
+			border-collapse: separate;
+			border-spacing: 0 5px;
+
+			thead {
+				th {
+					padding-bottom: 0;
+
+					font-size: 14px;
+					font-weight: 100;
+				}
+
+				th:first-child {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+
+			tbody {
+				tr {
+					td {
+						padding: 16px;
+						vertical-align: middle;
+
+						font-size: 16px;
+						font-weight: 100;
+
+						border-top: 1px solid $color-gray-border;
+						border-bottom: 1px solid $color-gray-border;
+						background: $color-gray-light;
+
+						small {
+							font-size: 12px;
+							font-weight: 100;
+						}
+
+
+						&:first-child {
+							@include border-top-left-radius(3px);
+							@include border-bottom-left-radius(3px);
+
+							border-left: 1px solid $color-gray-border;
+						}
+
+						&:last-child {
+							padding-right: 35px;
+
+							@include border-top-right-radius(3px);
+							@include border-bottom-right-radius(3px);
+
+							text-align: right;
+
+							border-right: 1px solid $color-gray-border;
+						}
+					}
+
+					&.active {
+						td {
+							background: $color-info-light;
+							border-color: $color-info;
+						}
+					}
+				}
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }
