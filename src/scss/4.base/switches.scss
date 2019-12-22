@@ -36,6 +36,17 @@
 				font-weight: 100;
 			}
 
+			.custom-control-input:checked {
+				&~.custom-control-label::after {
+					@include transform(translateX(22px));
+				}
+
+				&~.custom-control-label::before{
+					background-color: $color-primary;
+					border-color: $color-primary;
+				}
+			}
+
 			span {
 				position: relative;
 				right: 65px;

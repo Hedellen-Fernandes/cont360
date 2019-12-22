@@ -7,6 +7,19 @@
      */
 
 	@media only screen {
+		.table-header {
+			padding-top: 30px;
+
+			.task-list-title {
+				margin-left: 20px;
+			}
+
+			.btn.btn-outline-cont {
+				margin-left: 10px;
+				min-width: auto !important;
+			}
+		}
+
 		.list-itens.table-borderless {
 			border-collapse: separate;
 			border-spacing: 0 5px;
@@ -38,6 +51,11 @@
 						border-bottom: 1px solid $color-gray-border;
 						background: $color-gray-light;
 
+						.form-check-input {
+							width: 30px;
+							height: 30px;
+						}
+
 						small {
 							font-size: 12px;
 							font-weight: 100;
@@ -57,8 +75,6 @@
 							@include border-top-right-radius(3px);
 							@include border-bottom-right-radius(3px);
 
-							text-align: right;
-
 							border-right: 1px solid $color-gray-border;
 						}
 					}
@@ -68,6 +84,22 @@
 							background: $color-info-light;
 							border-color: $color-info;
 						}
+					}
+				}
+			}
+
+			&.custom-action {
+				tr {
+					td:first-child {
+						width: 30px;
+
+						background: transparent;
+						border: none;
+					}
+
+					td:nth-child(2) {
+						border-left: 1px solid $color-gray-border;
+						border-radius: 3px;
 					}
 				}
 			}
