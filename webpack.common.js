@@ -40,7 +40,8 @@ module.exports = {
 			{
 				loader: 'sass-loader',
 				options: {
-					implementation: require('sass')
+					implementation: require('sass'),
+					sourceMap: true
 				}
 			},
 			MiniCssExtractPlugin.loader,
@@ -84,7 +85,8 @@ module.exports = {
 
 	devServer: {
 		watchContentBase: true,
-		compress: true
+		// compress: true,
+		clientLogLevel: 'debug'
 	},
 
 	plugins: [

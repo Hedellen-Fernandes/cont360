@@ -1,54 +1,58 @@
 {
-    "name": "cont-360",
-    "version": "1.0.0",
-    "description": "Confidencial Project",
-    "main": "./src/js/index.js",
-    "scripts": {
-        "build": "webpack --config webpack.prod.js",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack-dev-server --config webpack.prod.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Hedellen-Fernandes/cont-360.git"
-    },
-    "keywords": [
-        "Website"
-    ],
-    "author": "Hedellen Fernandes",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/Hedellen-Fernandes/cont-360/issues"
-    },
-    "homepage": "https://github.com/Hedellen-Fernandes/cont-360#readme",
-    "devDependencies": {
-        "@babel/core": "^7.6.0",
-        "@babel/preset-env": "^7.6.0",
-        "@typescript-eslint/eslint-plugin": "^2.2.0",
-        "@typescript-eslint/parser": "^2.2.0",
-        "babel-eslint": "^10.0.3",
-        "babel-loader": "^8.0.6",
-        "css-loader": "^3.2.0",
-        "eslint": "^6.6.0",
-        "eslint-config-standard": "^14.1.0",
-        "eslint-loader": "^3.0.0",
-        "eslint-plugin-import": "^2.18.2",
-        "eslint-plugin-node": "^10.0.0",
-        "eslint-plugin-promise": "^4.2.1",
-        "eslint-plugin-standard": "^4.0.1",
-        "file-loader": "^4.2.0",
-        "imagemin-webpack-plugin": "^2.4.2",
-        "mini-css-extract-plugin": "^0.8.0",
-        "postcss-loader": "^3.0.0",
-        "react-scripts": "^3.0.1",
-        "sass": "^1.22.12",
-        "sass-loader": "^8.0.0",
-        "webpack": "^4.40.2",
-        "webpack-cli": "^3.3.8",
-        "webpack-dev-server": "^3.8.0",
-        "webpack-merge": "^4.2.2"
-    },
-    "dependencies": {
-        "bootstrap": "^4.3.1"
-    }
+	"name": "cont-360",
+	"version": "1.0.0",
+	"description": "Confidencial Project",
+	"main": "./src/js/index.js",
+	"scripts": {
+		"build": "webpack --config webpack.prod.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack-dev-server --config webpack.dev.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Hedellen-Fernandes/cont-360.git"
+	},
+	"keywords": [
+		"Website"
+	],
+	"author": "Hedellen Fernandes",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Hedellen-Fernandes/cont-360/issues"
+	},
+	"homepage": "https://github.com/Hedellen-Fernandes/cont-360#readme",
+	"devDependencies": {
+		"@babel/core": "^7.6.0",
+		"@babel/plugin-transform-runtime": "^7.7.6",
+		"@babel/preset-env": "^7.6.0",
+		"@typescript-eslint/eslint-plugin": "^2.2.0",
+		"@typescript-eslint/parser": "^2.2.0",
+		"babel-eslint": "^10.0.3",
+		"babel-loader": "^8.0.6",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-stage-0": "^6.24.1",
+		"css-loader": "^3.2.0",
+		"eslint": "^6.6.0",
+		"eslint-config-standard": "^14.1.0",
+		"eslint-loader": "^3.0.0",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-node": "^10.0.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
+		"file-loader": "^4.2.0",
+		"imagemin-webpack-plugin": "^2.4.2",
+		"mini-css-extract-plugin": "^0.8.0",
+		"postcss-loader": "^3.0.0",
+		"react-scripts": "^3.0.1",
+		"sass": "^1.22.12",
+		"sass-loader": "^8.0.0",
+		"webpack": "^4.40.2",
+		"webpack-cli": "^3.3.8",
+		"webpack-dev-server": "^3.8.0",
+		"webpack-merge": "^4.2.2"
+	},
+	"dependencies": {
+		"bootstrap": "^4.3.1",
+		"jkanban": "^1.0.1"
+	}
 }

@@ -1,18 +1,15 @@
 /*  ==========================================================================
-    Tarefas
+    Inputs
     ========================================================================== */
 
     /*
      * CSS for all devices
      */
 
-	 @media only screen {
-		#tarefas {
-			.header-title {
-				.custom-switch {
-					margin-left: 45px;
-				}
-			}
+	@media only screen {
+		.form-control {
+			padding: 20px 16px;
+			font-weight: 100;
 		}
     }
 

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Cont 360 - Tarefas</title>
+	<title>Cont 360 - Empresas</title>
 
 	<link rel="stylesheet" href="./dist/bundle.css">
 </head>
@@ -41,7 +41,7 @@
 			<div id="nav" class="menu d-flex flex-column justify-content-start align-items-center">
 				<ul class="menu-items">
 					<li>
-						<a href="./" class="d-flex flex-row justify-content-start align-items-center">
+						<a href="/" class="d-flex flex-row justify-content-start align-items-center">
 							<svg xmlns="http://www.w3.org/2000/svg" width="29.882" height="23.286">
 								<g id="Grupo_168" data-name="Grupo 168" transform="translate(-393.889 -94)">
 									<g id="_018-control" data-name="018-control" transform="translate(393.889 94)">
@@ -100,7 +100,7 @@
 								</button>
 							</form>
 						</div>
-						<a href="tarefas.html" class="flex-row justify-content-start align-items-center">
+						<a href="#" class="flex-row justify-content-start align-items-center">
 							<svg data-name="Grupo 99" xmlns="http://www.w3.org/2000/svg" width="17.272" height="17.269">
 								<g data-name="Grupo 98">
 									<path data-name="Caminho 177"
@@ -110,7 +110,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="d-flex active flex-row justify-content-start align-items-center">
+						<a href="#" class="d-flex flex-row justify-content-start align-items-center">
 							<svg id="_019-evaluation" data-name="019-evaluation" xmlns="http://www.w3.org/2000/svg"
 								width="26.661" height="26.661">
 								<g id="Grupo_33" data-name="Grupo 33">
@@ -416,7 +416,8 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="d-flex flex-row justify-content-start align-items-center">
+						<a href="./empresas.html"
+							class="d-flex active flex-row justify-content-start align-items-center">
 							<svg id="_016-factory" data-name="016-factory" xmlns="http://www.w3.org/2000/svg"
 								width="22.396" height="23.995">
 								<g id="Grupo_35" data-name="Grupo 35">
@@ -698,14 +699,7 @@
 			<div class="row">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
 					<div class="row header-title">
-						<h2 class="col-1">Tarefas</h2>
-						<div class="col-4 d-flex flex-row justify-content-start align-items-end">
-							<div class="custom-control custom-switch">
-								<span>Lista</span>
-								<input type="checkbox" class="custom-control-input" id="customSwitch1">
-								<label class="custom-control-label" for="customSwitch1">Kanban</label>
-							</div>
-						</div>
+						<h2 class="col-1">Empresas</h2>
 					</div>
 					<div class="row filtros">
 						<div class="search col-4">
@@ -731,30 +725,51 @@
 								</select>
 
 								<button type="button" class="btn btn-outline-cont btn-outline-primary">
-									Nova Tarefa
+									Nova Empresa
 								</button>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-			<section class="row no-footer pt-0" id="taskList">
-				<!-- <div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch"> -->
-				<div id="tasksKanban"
-					class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
-
+			<section class="row" id="taskList">
+				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
+					<table class="table table-borderless list-itens">
+						<thead>
+							<tr>
+								<th scope="col">Nome</th>
+								<th scope="col">CNPJ</th>
+								<th scope="col">Plano</th>
+								<th scope="col">Grupo de trabalho</th>
+								<th scope="col">Tarefa da empresa</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									AGL Soluções
+								</td>
+								<td>01.0001.00010-25</td>
+								<td>P01</td>
+								<td>Grupo 1</td>
+								<td>
+									icon config
+								</td>
+								<td class="text-right">Ações</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</section>
-			<!-- <section class="row">
+			<section class="row">
 				<div class="col-11 pr-37 pb-5 offset-1 d-flex flex-row justify-content-end align-items-center">
 					<button type="button" class="btn btn-outline-cont btn-outline-primary">
 						Exportar em lista
 					</button>
 				</div>
-			</section> -->
-
-	</section>
-	</div>
+			</section>
+		</div>
 	</section>
 
 	<script src="./dist/bundle.js"></script>

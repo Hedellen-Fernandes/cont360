@@ -1,0 +1,66 @@
+/*  ==========================================================================
+    jKanban
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.kanban-container {
+			width: 100% !important;
+		}
+
+		.kanban-board {
+			margin: 0 !important;
+			padding: 35px 30px !important;
+			background: $color-white;
+
+			&:first-child { padding-left: 0 !important; }
+
+			&:last-child { padding-right: 0 !important; }
+
+			&:nth-child(2) { background: #fbfbfb; }
+
+			header {
+				padding: 0 0 25px;
+
+				.kanban-title-board {
+					font-size: 17px;
+					font-weight: 100;
+				}
+			}
+
+			.kanban-drag {
+				padding: 0 !important;
+			}
+		}
+
+		.kanban-item {
+			padding: 13px 15px;
+			font-size: 15px;
+			font-weight: 100;
+
+			background: $color-gray-light;
+			border: 1px solid $color-gray-border;
+
+			@include border-radius(3px);
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

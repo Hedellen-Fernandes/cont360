@@ -7,6 +7,25 @@
      */
 
 	@media only screen {
+
+		#taskList {
+			padding-top: 30px;
+			height: calc(100% - 261px);
+
+			& > div {
+				padding: 0 35px 0 19px;
+			}
+
+
+			&.headered {
+				height: calc(100% - 331px);
+			}
+
+			&.no-footer {
+				height: calc(100% - 168px);
+			}
+		}
+
 		.table-header {
 			padding-top: 30px;
 
