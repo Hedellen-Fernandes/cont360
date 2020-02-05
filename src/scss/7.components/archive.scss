@@ -1,0 +1,51 @@
+/*  ==========================================================================
+    Archive
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		#archiveContainer {
+			.archive {
+				padding: 10px 10px 20px;
+				font-weight: 100;
+
+				border: 1px solid $color-gray-border;
+				@include border-radius(3px);
+
+				i {
+					width: 81px;
+					height: 88px;
+				}
+
+				.name {
+					margin-right: -10px;
+					padding-bottom: 15px;
+
+					width: calc(100% - 26px);
+
+					line-height: 14px;
+					border-bottom: 3px solid $color-gray-darkest;
+				}
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

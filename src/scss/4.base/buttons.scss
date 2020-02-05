@@ -36,6 +36,22 @@
 					background: $color-gray-darkest;
 				}
 			}
+
+			&.btn-primary {
+				background-color: $color-primary;
+				border-color: $color-primary;
+
+				&.dropdown-toggle {
+					width: 26px;
+					height: 26px;
+
+					@include border-radius(100%);
+
+					&:after {
+						display: none;
+					}
+				}
+			}
 		}
     }
 
