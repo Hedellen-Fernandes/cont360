@@ -18,6 +18,10 @@
 					padding-right: 50px;
 
 					overflow-y: scroll;
+
+					&::-webkit-scrollbar {
+						display: none;
+					} 
 				}
 
 				.header, .header-title {

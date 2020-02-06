@@ -53,6 +53,7 @@
 	},
 	"dependencies": {
 		"bootstrap": "^4.3.1",
+		"dragula": "^3.7.2",
 		"jkanban": "^1.0.1"
 	}
 }

@@ -1,5 +1,5 @@
 /*  ==========================================================================
-    jKanban
+    Kanban
     ========================================================================== */
 
     /*
@@ -7,44 +7,89 @@
      */
 
 	@media only screen {
-		.kanban-container {
-			width: 100% !important;
-		}
+		#tasksKanban {
+			.row {
+				height: 100%;
+			}
 
-		.kanban-board {
-			margin: 0 !important;
-			padding: 35px 30px !important;
-			background: $color-white;
+			.column-board {
+				padding: 30px 20px 20px;
 
-			&:first-child { padding-left: 0 !important; }
+				.title-board {
+					padding: 0 0 0;
 
-			&:last-child { padding-right: 0 !important; }
+					span {
+						padding: 0 5px 0;
 
-			&:nth-child(2) { background: #fbfbfb; }
+						font-size: 17px;
+						font-weight: 400;
+						color: $color-gray-darkest;
+						
+						white-space: nowrap; 
+					}
+					
+					hr {
+						margin-top: 4px;
+						width: 100%;
+						background: $color-gray-darkest;
+					}
+				}
 
-			header {
-				padding: 0 0 25px;
+				.board {
+					height: 100%;
 
-				.kanban-title-board {
-					font-size: 17px;
+					margin: 0;
+					padding: 0;
+					background: transparent;
+
+					.kanban-drag {
+						padding: 0;
+					}
+				}
+
+				.card {
+					padding: 13px 15px;
+					font-size: 15px;
 					font-weight: 100;
+
+					color: $color-gray-darkest;
+
+					background: $color-gray-light;
+					border: 1px solid $color-gray-border;
+
+					@include border-radius(3px);
+
+					.header {
+						font-size: 13px;
+						font-weight: 400;
+					}
+
+					h4 {
+						margin: 8px 0 13px;
+
+						font-size: 15px;
+						font-weight: 400;
+						line-height: 16px;
+					}
+				}
+
+
+				&:first-child { 
+					.board {
+						padding-left: 0; 
+					}
+				}
+
+				&:last-child { 
+					.board {
+						padding-right: 0; 
+					}
+				}
+
+				&:nth-child(2) { 
+					background: #fbfbfb;
 				}
 			}
-
-			.kanban-drag {
-				padding: 0 !important;
-			}
-		}
-
-		.kanban-item {
-			padding: 13px 15px;
-			font-size: 15px;
-			font-weight: 100;
-
-			background: $color-gray-light;
-			border: 1px solid $color-gray-border;
-
-			@include border-radius(3px);
 		}
     }
 

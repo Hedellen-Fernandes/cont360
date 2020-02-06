@@ -76,6 +76,10 @@
 				list-style: none;
 				overflow-y: scroll;
 
+				&::-webkit-scrollbar {
+					display: none;
+				} 
+
 				li {
 					@extend .menu-items;
 					position: relative;
