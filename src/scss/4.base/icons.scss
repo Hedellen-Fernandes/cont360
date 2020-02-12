@@ -88,6 +88,24 @@
                 background-size: 100%;
 
                 @include transform(translateY(3px));
+            }
+            
+            &.edit {
+				width: 16px;
+                height: 18px;
+
+                background: url(./img/icons/actions/editar.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+            }
+            
+            &.plus-rounded {
+				width: 26px;
+                height: 26px;
+
+                background: url(./img/icons/actions/plus-rounded-light.svg) center center no-repeat;
+                background-size: 100%;
 			}
         }
     }

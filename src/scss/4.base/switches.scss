@@ -8,6 +8,7 @@
 
 	@media only screen {
 		.custom-switch {
+			margin-top: 3px;
 			overflow: visible;
 
 			.custom-control-label {
@@ -33,7 +34,10 @@
 			}
 			.custom-control-label, span {
 				color: $color-gray-darkest;
-				font-weight: 100;
+
+				font-size: 14px; 
+				line-height: 26px; 
+				font-weight: 400;
 			}
 
 			.custom-control-input:checked {

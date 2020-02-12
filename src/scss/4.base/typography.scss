@@ -23,7 +23,7 @@
             h4,
             h5,
             h6 {
-                font-weight: 100;
+                font-weight: 700;
                 margin: 0 0 0 0;
                 color: inherit;
             }
@@ -34,7 +34,7 @@
             }
 
             h2{
-                font-size: 1.5625rem;
+                font-size: 22px;
                 line-height: 2.0625rem;
             }
 
@@ -61,7 +61,11 @@
 			.header-title {
 				padding-right: 15px;
 				margin-top: 2.5rem;
-				margin-bottom: 0.9375rem;
+                margin-bottom: 0.9375rem;
+                
+                h2 {
+                    line-height: 27px;
+                }
 			}
 
         /*  Texts
@@ -69,7 +73,7 @@
             p {
                 color: $color-black;
                 font-family: $font-family;
-                font-weight: 100;
+                font-weight: 400;
                 font-size: 16px;
                 line-height: 22px;
                 margin: 0;

@@ -1,36 +1,34 @@
 /*  ==========================================================================
-    Tarefas
-    ========================================================================== */
+	Tarefas
+	========================================================================== */
 
-    /*
-     * CSS for all devices
-     */
+	/*
+	* CSS for all devices
+	*/
 
-	 @media only screen {
+	@media only screen {
 		#tarefas {
 			.header-title {
 				.custom-switch {
-					margin-left: 45px;
+					margin-left: 30px;
 				}
-      }
-      
-      
+			}
 		}
-    }
+	}
 
 
-    /*
-     * CSS for devices with resolution up to a maximum of breakpoint
-     */
+	/*
+	* CSS for devices with resolution up to a maximum of breakpoint
+	*/
 
-    @media only screen and (max-width: $breakpoint) {
+	@media only screen and (max-width: $breakpoint) {
 
-    }
+	}
 
-    /*
-     * CSS for devices with resolution up to the minimum breakpoint
-     */
+	/*
+	* CSS for devices with resolution up to the minimum breakpoint
+	*/
 
-    @media only screen and (min-width: $breakpoint+1) {
+	@media only screen and (min-width: $breakpoint+1) {
 
-    }
+	}
