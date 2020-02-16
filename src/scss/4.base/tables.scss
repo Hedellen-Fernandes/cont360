@@ -27,14 +27,16 @@
 		}
 
 		.table-header {
-			padding-top: 30px;
+			padding-top: 1.875rem;
 
 			.task-list-title {
-				margin-left: 20px;
+				margin-left: 1.25rem;
 			}
 
 			.btn.btn-outline-cont {
-				margin-left: 10px;
+				margin-left: 0.625rem;
+				padding-right: 45px !important;
+				
 				min-width: auto !important;
 			}
 		}
@@ -48,12 +50,18 @@
 					padding-bottom: 0;
 
 					font-size: 14px;
-					font-weight: 100;
+					font-weight: 400;
+
+					text-align: center;
 				}
 
 				th:first-child {
 					padding-left: 0;
 					padding-right: 0;
+				}
+
+				th:nth-child(2) {
+					text-align: left;
 				}
 			}
 
@@ -63,8 +71,10 @@
 						padding: 16px;
 						vertical-align: middle;
 
-						font-size: 16px;
-						font-weight: 100;
+						font-size: 14px;
+						font-weight: 400;
+
+						text-align: center;
 
 						border-top: 1px solid $color-gray-border;
 						border-bottom: 1px solid $color-gray-border;
@@ -77,9 +87,7 @@
 
 						small {
 							font-size: 12px;
-							font-weight: 100;
 						}
-
 
 						&:first-child {
 							@include border-top-left-radius(3px);
@@ -119,6 +127,14 @@
 					td:nth-child(2) {
 						border-left: 1px solid $color-gray-border;
 						border-radius: 3px;
+
+						text-align: left;
+					}
+				}
+
+				tr.active {
+					td:nth-child(2) {
+						border-left: 1px solid $color-info;
 					}
 				}
 			}

@@ -106,7 +106,35 @@
 
                 background: url(./img/icons/actions/plus-rounded-light.svg) center center no-repeat;
                 background-size: 100%;
-			}
+            }
+            
+            &.export {
+                width: 28px;
+                height: 28px;
+
+                background: $color-info url(./img/icons/actions/exportar-lista.svg) center center no-repeat;
+                background-size: 50%;
+                
+                @include border-radius(100%);
+                @include transform(translateY(3px));
+            }
+        }
+
+        .circle {
+            display: inline-block;
+
+            width: 10px;
+            height: 10px;
+
+            @include border-radius(100%);
+
+            &.primary { 
+                background: $color-info;
+            }
+
+            &.danger { 
+                background: $color-tertiary;
+            }
         }
     }
 
