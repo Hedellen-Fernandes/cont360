@@ -62,10 +62,23 @@
 				padding-right: 15px;
 				margin-top: 2.5rem;
                 margin-bottom: 0.9375rem;
-                
+
+				&.border-bottom {
+					margin-top: 29px;
+					padding-bottom: 24px;
+					border-bottom: 1px solid $color-gray-border;
+				}
+
                 h2 {
                     line-height: 27px;
                 }
+			}
+
+			.subtitle {
+				h2 {
+					padding: 10px 0 22px;
+					color: $color-gray-darkest
+				}
 			}
 
         /*  Texts
@@ -102,11 +115,17 @@
         /*  Links
             ========================================================================== */
             a {
-                color: blue;
+                color: $color-gray-darkest;
                 text-decoration: none;
+				@include transition(.2s)
             }
 
-            a:hover { text-decoration: underline; }
+            a:hover {
+				opacity: .7;
+				color: $color-gray-darkest;
+				text-decoration: none;
+				@include transition(.2s)
+			}
 
         /*  Figure
             ========================================================================== */

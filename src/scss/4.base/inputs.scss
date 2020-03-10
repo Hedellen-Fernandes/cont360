@@ -7,9 +7,23 @@
      */
 
 	@media only screen {
-		.form-control {
-			padding: 20px 16px;
-			font-weight: 400;
+		.form-control, select.form-control {
+			margin-bottom: 10px;
+			padding: 28px 26px;
+			font-weight: 100;
+			color: $color-gray-darkest;
+
+			border: 1px solid $color-gray-border;
+
+			@include border-radius(4px);
+
+			&::placeholder {
+				color: $color-gray-darkest;
+			}
+		}
+
+		select.form-control {
+			height: 58px;
 		}
     }
 

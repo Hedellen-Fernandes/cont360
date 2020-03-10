@@ -31,12 +31,16 @@
 
 			.task-list-title {
 				margin-left: 1.25rem;
+
+				h4 {
+					margin-left: 5px;
+				}
 			}
 
 			.btn.btn-outline-cont {
 				margin-left: 0.625rem;
 				padding-right: 45px !important;
-				
+
 				min-width: auto !important;
 			}
 		}
@@ -44,6 +48,15 @@
 		.list-itens.table-borderless {
 			border-collapse: separate;
 			border-spacing: 0 5px;
+
+			&.custom-action {
+				thead, tbody {
+					th:nth-child(2),
+					td:nth-child(2) {
+						text-align: left;
+					}
+				}
+			}
 
 			thead {
 				th {
@@ -58,9 +71,7 @@
 				th:first-child {
 					padding-left: 0;
 					padding-right: 0;
-				}
 
-				th:nth-child(2) {
 					text-align: left;
 				}
 			}
@@ -90,6 +101,8 @@
 						}
 
 						&:first-child {
+							text-align: left;
+
 							@include border-top-left-radius(3px);
 							@include border-bottom-left-radius(3px);
 

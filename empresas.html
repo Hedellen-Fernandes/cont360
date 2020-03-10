@@ -36,12 +36,13 @@
 		</div>
 	</nav>
 
-	<section id="tarefas">
+	<section id="empresas">
 		<div class="container">
+
 			<div id="nav" class="menu d-flex flex-column justify-content-start align-items-center">
 				<ul class="menu-items">
 					<li>
-						<a href="/" class="d-flex flex-row justify-content-start align-items-center">
+						<a href="./" class="d-flex flex-row justify-content-start align-items-center">
 							<svg xmlns="http://www.w3.org/2000/svg" width="29.882" height="23.286">
 								<g id="Grupo_168" data-name="Grupo 168" transform="translate(-393.889 -94)">
 									<g id="_018-control" data-name="018-control" transform="translate(393.889 94)">
@@ -100,7 +101,7 @@
 								</button>
 							</form>
 						</div>
-						<a href="#" class="flex-row justify-content-start align-items-center">
+						<a href="tarefas.html" class="flex-row justify-content-start align-items-center">
 							<svg data-name="Grupo 99" xmlns="http://www.w3.org/2000/svg" width="17.272" height="17.269">
 								<g data-name="Grupo 98">
 									<path data-name="Caminho 177"
@@ -110,7 +111,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="d-flex flex-row justify-content-start align-items-center">
+						<a href="#" class="d-flex active flex-row justify-content-start align-items-center">
 							<svg id="_019-evaluation" data-name="019-evaluation" xmlns="http://www.w3.org/2000/svg"
 								width="26.661" height="26.661">
 								<g id="Grupo_33" data-name="Grupo 33">
@@ -416,8 +417,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="./empresas.html"
-							class="d-flex active flex-row justify-content-start align-items-center">
+						<a href="#" class="d-flex flex-row justify-content-start align-items-center">
 							<svg id="_016-factory" data-name="016-factory" xmlns="http://www.w3.org/2000/svg"
 								width="22.396" height="23.995">
 								<g id="Grupo_35" data-name="Grupo 35">
@@ -696,6 +696,7 @@
 					</li>
 				</ul>
 			</div>
+
 			<div class="row">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
 					<div class="row header-title">
@@ -726,6 +727,8 @@
 
 								<button type="button" class="btn btn-outline-cont btn-outline-primary">
 									Nova Empresa
+
+									<i class="icon plus-rounded"></i>
 								</button>
 							</form>
 						</div>
@@ -756,7 +759,11 @@
 								<td>
 									icon config
 								</td>
-								<td class="text-right">Ações</td>
+								<td class="text-right">
+									<button class="btn btn-outline pr-0">
+										<i class="icon edit"></i>
+									</button>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -766,6 +773,8 @@
 				<div class="col-11 pr-37 pb-5 offset-1 d-flex flex-row justify-content-end align-items-center">
 					<button type="button" class="btn btn-outline-cont btn-outline-primary">
 						Exportar em lista
+
+						<i class="icon export"></i>
 					</button>
 				</div>
 			</section>

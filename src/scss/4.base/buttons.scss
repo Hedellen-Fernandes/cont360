@@ -21,7 +21,8 @@
 				text-align: left !important;
 			}
 
-			&.btn-outline-primary {
+			&.btn-outline-primary,
+			&.btn-outline-info {
 				position: relative;
 
 				padding: 1.125rem 1.5625rem;
@@ -38,12 +39,34 @@
 					background: $color-gray-darkest;
 				}
 
+				&.w-auto {
+					width: auto !important;
+					min-width: 130px !important;
+				}
+
 				.icon {
 					position: absolute;
 					right: 15px;
 					top: 51%;
 
 					@include transform(translateY(-50%));
+				}
+			}
+
+			&.btn-outline-info {
+				background: $color-info;
+				border-color: $color-info;
+				@include transition(.2s);
+
+				&:hover {
+					color: $color-gray-darkest;
+
+					background: $color-info;
+					border-color: $color-info;
+
+					opacity: .7;
+
+					@include transition(.2s);
 				}
 			}
 

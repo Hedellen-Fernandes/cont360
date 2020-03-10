@@ -692,147 +692,66 @@
 
 			<div class="row">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
-					<div class="row header-title">
-						<h2 class="col-1">Tarefas</h2>
-						<div class="col-4 d-flex flex-row justify-content-start align-items-end">
-							<div class="custom-control custom-switch">
-								<span>Lista</span>
-								<input type="checkbox" class="custom-control-input" id="customSwitch1">
-								<label class="custom-control-label" for="customSwitch1">Kanban</label>
-							</div>
-						</div>
+					<div class="row header-title border-bottom">
+						<h2 class="col-2">
+							<a href="#">
+								<i class="icon back mr-3"></i>
+								Voltar
+							</a>
+						</h2>
+						<hr />
 					</div>
-					<div class="row filtros">
-						<div class="search col-4">
-							<form class="form-inline w-100 flex-row justify-content-between align-items-center">
-								<input class="form-control col-10" type="search" placeholder="Pesquisar"
-									aria-label="Pesquisar">
-								<button class="btn btn-info" type="submit">
-									<svg data-name="Grupo 99" xmlns="http://www.w3.org/2000/svg" width="17.272"
-										height="17.269">
-										<g data-name="Grupo 98">
-											<path data-name="Caminho 177"
-												d="M15.437 1.832a6.265 6.265 0 00-9.164 8.535l-.746.746-.76-.76a.444.444 0 00-.628 0L.575 13.916a1.964 1.964 0 102.778 2.778l3.563-3.563a.444.444 0 000-.628l-.76-.76.746-.746a6.265 6.265 0 008.535-9.164zM2.725 16.065A1.077 1.077 0 111.2 14.544l1.992-1.987 1.521 1.52zm2.617-2.617l-1.522-1.52.632-.632 1.521 1.521zm9.467-3.384a5.377 5.377 0 111.575-3.8 5.383 5.383 0 01-1.576 3.8z" />
-										</g>
-									</svg>
-								</button>
-							</form>
-						</div>
-						<div class="filters col-8 d-flex flex-row justify-content-start align-items-center">
-							<form class="form-inline w-100">
-								<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Filtrar por</label>
-								<select class="custom-select mr-auto">
-									<option selected>NOME</option>
-								</select>
-
-								<button type="button" class="btn btn-outline-cont btn-outline-primary">
-									Nova Tarefa
-
-									<i class="icon plus-rounded"></i>
-								</button>
-							</form>
-						</div>
+					<div class="row subtitle">
+						<h2>Nova Tarefa</h2>
 					</div>
 				</div>
 			</div>
 			<section class="row no-footer" id="taskList">
-				<!-- Kanban -->
-				<!-- <div id="tasksKanban"
-					class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
+				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
 					<div class="row">
-						<div class="col-4 column-board">
-							<div class="title-board d-flex flex-row flex-row align-items-end">
-								<span>Nova tarefa</span>
-								<hr>
-							</div>
-							<div class="board">
-								<div class="card">
-									<div class="header">
-										<span class="author"><strong>Criada por</strong> Fábio Cavalcante</span> |
-										<span class="author">Prazo 12/10/2019</span>
-									</div>
-									<h4>this is my first task!</h4>
-									<div class="footer d-flex flex-row flex-row align-items-end">
-										<div class="avatar">
-											<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
-												class="rounded-circle">
-										</div>
-										<button class="btn btn-outline">
-											<i class="icon edit"></i>
-										</button>
-									</div>
+						<form action="" class="col-md-12">
+							<div class="row">
+								<div class="col-md-6">
+									<input class="form-control" type="text" placeholder="Título">
+								</div>
+								<div class="col-md-6">
+									<input class="form-control" type="text" placeholder="Prazo de entrega">
 								</div>
 							</div>
-						</div>
-						<div class="col-4 column-board">
-							<div class="title-board d-flex flex-row flex-row align-items-end">
-								<span>Em andamento</span>
-								<hr>
+							<div class="row">
+								<div class="col-md-6">
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+										placeholder="Descrição"></textarea>
+								</div>
+								<div class="col-md-6">
+									<select id="disabledSelect" class="form-control">
+										<option>Selecione um vinculo estratégico</option>
+									</select>
+									<select id="disabledSelect" class="form-control">
+										<option>Selecione um responsável pela tarefa</option>
+									</select>
+								</div>
 							</div>
-							<div class="board"></div>
-						</div>
-						<div class="col-4 column-board">
-							<div class="title-board d-flex flex-row flex-row align-items-end">
-								<span>Concluído</span>
-								<hr>
+							<div class="row">
+								<div class="col-md-12">
+									<input class="form-control" type="text" placeholder="Participantes">
+								</div>
 							</div>
-							<div class="board"></div>
-						</div>
-					</div>
-				</div> -->
+							<div class="row">
+								<div class="col-md-12 text-right">
+									<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto mr-2">
+										Cancelar
+										<i class="icon close-danger ml-3"></i>
+									</button>
 
-				<!-- Lista -->
-				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
-					<table class="table table-borderless list-itens">
-						<thead>
-							<tr>
-								<th scope="col">Nome</th>
-								<th scope="col">Prazo</th>
-								<th scope="col">Ação Estratégica</th>
-								<th scope="col">Status</th>
-								<th scope="col">Responsável</th>
-								<th scope="col"></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<small>Upload por Fábio Cavalcante</small> <br>
-									Sou uma nova tarefa
-								</td>
-								<td>22/09/2019</td>
-								<td>Título ação</td>
-								<td>Pendente</td>
-								<td>
-									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
-										class="rounded-circle avatar">
-								</td>
-								<td class="text-right">
-									<button class="btn btn-outline">
-										<i class="icon edit"></i>
+									<button type="button" class="btn btn-outline-cont btn-outline-info">
+										Salvar tarefa
+										<i class="icon save"></i>
 									</button>
-								</td>
-							</tr>
-							<tr class="active">
-								<td>
-									<small>Upload por Fábio Cavalcante</small> <br>
-									Sou uma nova tarefa
-								</td>
-								<td>22/09/2019</td>
-								<td>Título ação</td>
-								<td>Pendente</td>
-								<td>
-									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
-										class="rounded-circle avatar">
-								</td>
-								<td class="text-right">
-									<button class="btn btn-outline pr-0">
-										<i class="icon edit"></i>
-									</button>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</section>
 			<!-- <section class="row">

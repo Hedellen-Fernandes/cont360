@@ -60,6 +60,16 @@
                 @include transform(translateY(1px));
 			}
 
+			&.save {
+				width: 18px;
+                height: 18px;
+
+                background: url(./img/icons/actions/salvar.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(1px));
+			}
+
 			&.send {
 				width: 14px;
                 height: 14px;
@@ -89,7 +99,7 @@
 
                 @include transform(translateY(3px));
             }
-            
+
             &.edit {
 				width: 16px;
                 height: 18px;
@@ -99,7 +109,7 @@
 
                 @include transform(translateY(3px));
             }
-            
+
             &.plus-rounded {
 				width: 26px;
                 height: 26px;
@@ -107,14 +117,25 @@
                 background: url(./img/icons/actions/plus-rounded-light.svg) center center no-repeat;
                 background-size: 100%;
             }
-            
+
             &.export {
                 width: 28px;
                 height: 28px;
 
                 background: $color-info url(./img/icons/actions/exportar-lista.svg) center center no-repeat;
                 background-size: 50%;
-                
+
+                @include border-radius(100%);
+                @include transform(translateY(3px));
+            }
+
+			&.back {
+                width: 24px;
+                height: 24px;
+
+                background: $color-info url(./img/topo/voltar.svg) right 5px center no-repeat;
+                background-size: 50%;
+
                 @include border-radius(100%);
                 @include transform(translateY(3px));
             }
@@ -128,11 +149,11 @@
 
             @include border-radius(100%);
 
-            &.primary { 
+            &.primary {
                 background: $color-info;
             }
 
-            &.danger { 
+            &.danger {
                 background: $color-tertiary;
             }
         }
