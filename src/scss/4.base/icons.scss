@@ -34,7 +34,17 @@
 				width: 13px;
                 height: 11px;
 
-                background: url(./img/icons/comentar.svg) center center no-repeat;
+                background: url(./img/icons/actions/comentar.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(0px));
+			}
+
+			&.next {
+				width: 17px;
+                height: 15px;
+
+                background: url(./img/icons/actions/proximo.svg) center center no-repeat;
                 background-size: 100%;
 
                 @include transform(translateY(0px));
@@ -65,6 +75,16 @@
                 height: 18px;
 
                 background: url(./img/icons/actions/salvar.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(1px));
+			}
+
+			&.mail-send {
+				width: 18px;
+                height: 18px;
+
+                background: url(./img/icons/forms/convite.svg) center center no-repeat;
                 background-size: 100%;
 
                 @include transform(translateY(1px));
@@ -116,6 +136,29 @@
 
                 background: url(./img/icons/actions/plus-rounded-light.svg) center center no-repeat;
                 background-size: 100%;
+            }
+
+			&.plus {
+				width: 14px;
+                height: 14px;
+
+                background: url(./img/icons/forms/adicionar.svg) center center no-repeat;
+				background-size: 100%;
+
+				&.info {
+					background: url(./img/icons/forms/adicionar-info.svg) center center no-repeat;
+					background-size: 100%;
+				}
+            }
+
+			&.pen-edit {
+				width: 14px;
+                height: 14px;
+
+                background: url(./img/icons/forms/alterar-avatar.svg) center center no-repeat;
+				background-size: 100%;
+
+				@include transform(rotate(180deg));
             }
 
             &.export {

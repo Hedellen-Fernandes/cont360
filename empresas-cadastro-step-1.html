@@ -37,7 +37,7 @@
 		</div>
 	</nav>
 
-	<section id="tarefas">
+	<section id="usuario">
 		<div class="container">
 
 			<div id="nav" class="menu d-flex flex-column justify-content-start align-items-center">
@@ -703,42 +703,88 @@
 					</div>
 					<div class="row subtitle">
 						<div class="col-md-12">
-							<h2>Nova Tarefa</h2>
+							<h2>Cadastrando nova empresa</h2>
 						</div>
 					</div>
 				</div>
 			</div>
 			<section class="row no-footer" id="taskList">
-				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
+				<div class="col-11 offset-1">
 					<div class="row">
-						<form action="" class="col-md-12">
-							<div class="row">
-								<div class="col-md-6">
-									<input class="form-control" type="text" placeholder="Título">
-								</div>
-								<div class="col-md-6">
-									<input class="form-control" type="text" placeholder="Prazo de entrega">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-										placeholder="Descrição"></textarea>
-								</div>
-								<div class="col-md-6">
-									<select>
-										<option>Selecione um vinculo estratégico</option>
-									</select>
-									<select>
-										<option>Selecione um responsável pela tarefa</option>
-									</select>
-								</div>
-							</div>
+						<form action="" class="col-md-9 form-cont">
 							<div class="row">
 								<div class="col-md-12">
-									<input class="form-control" type="text" placeholder="Participantes">
+									<label for="">Dados da Empresa</label>
+									<input class="form-control" type="text" placeholder="Nome / Razão Social">
 								</div>
 							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<input class="form-control" type="text" placeholder="CNPJ">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<label for="">Informações de contato</label>
+								</div>
+								<div class="col-md-4">
+									<input class="form-control" type="email" placeholder="CEP">
+								</div>
+								<div class="col-md-8">
+									<input class="form-control" type="text" placeholder="Endereço">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-2">
+									<input class="form-control" type="text" placeholder="Número">
+								</div>
+								<div class="col-md-2">
+									<input class="form-control" type="text" placeholder="Comp.">
+								</div>
+								<div class="col-md-8">
+									<input class="form-control" type="text" placeholder="Bairro">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<input class="form-control" type="text" placeholder="Cidade">
+								</div>
+								<div class="col-md-2">
+									<input class="form-control" type="text" placeholder="UF">
+								</div>
+								<div class="col-md-4">
+									<input class="form-control" type="phone" placeholder="Telefone">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<label for="">Responsável financeiro</label>
+									<select>
+										<option>Selecione</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<label for="">Responsável RH</label>
+									<select>
+										<option>Selecione</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<label for="">Grupo de trabalho</label>
+									<select>
+										<option>Selecione</option>
+									</select>
+								</div>
+							</div>
+
 							<div class="row">
 								<div class="col-md-12 text-right">
 									<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto mr-2">
@@ -747,23 +793,32 @@
 									</button>
 
 									<button type="button" class="btn btn-outline-cont btn-outline-info">
-										Salvar tarefa
-										<i class="icon save"></i>
+										Próximo passo
+										<i class="icon next"></i>
 									</button>
 								</div>
 							</div>
 						</form>
+						<div class="col-md-3 d-flex flex-column justify-content-start align-items-center">
+							<div class="photo-avatar">
+								<div class="controls d-flex flex-row justify-content-center align-items-start">
+									<button class="btn btn-outline">
+										<i class="icon plus info"></i>
+									</button>
+									<button class="btn btn-outline">
+										<i class="icon pen-edit"></i>
+									</button>
+								</div>
+							</div>
+							<div class="custom-control mt-3 ml-4 custom-switch">
+								<span>Ativo</span>
+								<input type="checkbox" class="custom-control-input" id="customSwitch1">
+								<label class="custom-control-label" for="customSwitch1">Inativo</label>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
-			<!-- <section class="row">
-				<div class="col-11 pr-37 pb-5 offset-1 d-flex flex-row justify-content-end align-items-center">
-					<button type="button" class="btn btn-outline-cont btn-outline-primary">
-						Exportar em lista
-					</button>
-				</div>
-			</section> -->
-
 	</section>
 	</div>
 	</section>

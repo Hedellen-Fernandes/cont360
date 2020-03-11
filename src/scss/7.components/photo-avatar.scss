@@ -1,0 +1,74 @@
+/*  ==========================================================================
+    Photo Avatar
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.photo-avatar {
+			position: relative;
+			width: 180px;
+			height: 180px;
+
+			background: $color-gray-light url(./img/icons/forms/cam-avatar.svg) center center no-repeat;
+
+
+			overflow: hidden;
+
+			@include border-radius(100%);
+			border: 1px solid $color-gray-border;
+
+			.controls {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+
+				width: 100%;
+				height: 50px;
+
+				padding: 10px;
+
+				background: $color-gray-darkest;
+
+				button:first-child {
+					position: relative;
+
+					&:after {
+						content: '';
+
+						position: absolute;
+						top: 0;
+						right: 0;
+
+						width: 1px;
+						height: 100%;
+
+						background: $color-gray-border;
+					}
+				}
+
+				button:last-child {
+					padding-left: 7px;
+				}
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }
