@@ -161,6 +161,16 @@
 				@include transform(rotate(180deg));
             }
 
+			&.copy {
+				width: 14px;
+                height: 14px;
+
+                background: url(./img/icons/forms/alterar-avatar.svg) center center no-repeat;
+				background-size: 100%;
+
+				@include transform(rotate(180deg));
+            }
+
             &.export {
                 width: 28px;
                 height: 28px;

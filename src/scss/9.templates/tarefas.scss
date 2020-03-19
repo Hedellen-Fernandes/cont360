@@ -14,6 +14,56 @@
 				}
 			}
 		}
+
+		.task-box {
+			padding: 30px;
+
+			border: 1px solid $color-gray-border;
+
+			@include border-radius(4px);
+
+			.label-title {
+				margin: 0 0 5px 0;
+				color: $color-primary;
+				font-size: 13px;
+			}
+
+			p {
+				margin-bottom: 20px;
+				font-weight: 100;
+			}
+
+			.avatar-list {
+				&:first-child {
+					padding-right: 10px;
+					margin-right: 10px;
+
+					position: relative;
+
+					&:after {
+						position: absolute;
+						right: 0;
+						top: 0;
+
+						content: '';
+						width: 1px;
+						height: 100%;
+						background: $color-gray-darkest;
+
+					}
+				}
+			}
+		}
+
+		.message-box.tasks {
+			.feed-publication {
+				margin-top: 25px;
+				padding-top: 25px;
+
+				border-bottom: none;
+				border-top: 1px solid $color-gray-border;
+			}
+		}
 	}
 
 

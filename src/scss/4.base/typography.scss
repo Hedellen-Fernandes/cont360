@@ -25,7 +25,7 @@
             h6 {
                 font-weight: 700;
                 margin: 0 0 0 0;
-                color: inherit;
+				color: $color-gray-darkest;
             }
 
             h1{
@@ -77,14 +77,43 @@
 			.subtitle {
 				h2 {
 					padding: 10px 0 22px;
-					color: $color-gray-darkest
+				}
+
+				p {
+					padding: 16px 0 27px;
+					font-weight: 100;
+
+					span {
+						&:first-child {
+							padding-right: 10px;
+							margin-right: 10px;
+
+							position: relative;
+
+							&:after {
+								position: absolute;
+								right: 0;
+								top: 0;
+
+								content: '';
+								width: 1px;
+								height: 100%;
+								background: $color-gray-darkest;
+
+							}
+						}
+					}
+				}
+
+				button:nth-child(even) {
+					margin: 0 7px;
 				}
 			}
 
         /*  Texts
             ========================================================================== */
             p {
-                color: $color-black;
+                color: $color-gray-darkest;
                 font-family: $font-family;
                 font-weight: 400;
                 font-size: 16px;
@@ -97,7 +126,7 @@
             ul,
             ol,
             dl {
-                color: $color-black;
+                color: $color-gray-darkest;
                 font-size: 16px;
                 font-size: 1rem;
                 line-height: 1.575;

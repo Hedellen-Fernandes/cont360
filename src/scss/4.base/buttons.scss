@@ -13,12 +13,12 @@
 				background: $color-info;
 			}
 
-			&.btn-outline-cont {
-				padding: 0.4375rem 0.9375rem !important;
+			&.btn-outline-cont.btn-outline-primary {
+				padding: 0.4375rem 0.9375rem;
 
-				min-width: 198px !important;
-				height: auto !important;
-				text-align: left !important;
+				min-width: 198px;
+				height: auto;
+				text-align: left;
 			}
 
 			&.btn-outline-primary,
@@ -32,7 +32,7 @@
 				line-height: 1.625rem;
 				color: $color-gray-darkest;
 
-				border-color: $color-gray-darkest;
+				border-color: $color-gray-border;
 
 				&:hover {
 					color: $color-white;
