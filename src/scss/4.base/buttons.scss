@@ -13,7 +13,41 @@
 				background: $color-info;
 			}
 
-			&.btn-outline-cont.btn-outline-primary {
+
+			&.btn-outline-primary,
+			&.btn-outline-info {
+				position: relative;
+
+				padding: 1.125rem 1.5625rem;
+
+				font-size: 0.9375rem;
+				font-weight: 400;
+				line-height: 1.625rem;
+				color: $color-gray-darkest;
+
+				border-color: $color-gray-border;
+
+				&:hover {
+					color: $color-white;
+					background: $color-gray-darkest;
+				}
+
+				&.w-auto {
+					width: auto !important;
+					min-width: 130px !important;
+				}
+
+				.icon {
+					position: absolute;
+					right: 15px;
+					top: 51%;
+
+					@include transform(translateY(-50%));
+				}
+			}
+
+			&.btn-outline-cont.btn-outline-primary,
+			&.btn-outline-cont.btn-outline-info {
 				padding: 0.4375rem 0.9375rem;
 
 				min-width: 198px;

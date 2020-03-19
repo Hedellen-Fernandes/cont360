@@ -10,7 +10,11 @@
 		#arquivos {
 			.header-title {
 				.btn-outline-cont {
-					min-width: auto !important;
+					min-width: 110px !important;
+
+					&:nth-child(even) {
+						margin:0 5px;
+					}
 				}
 			}
 		}
