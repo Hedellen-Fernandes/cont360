@@ -45,6 +45,7 @@
 								display: flex;
 
 								input {
+									margin: 0;
 									display: inline;
 								}
 							}
@@ -69,7 +70,7 @@
 
 				&::-webkit-scrollbar {
 					display: none;
-				} 
+				}
 
 				li {
 					@extend .menu-items;
@@ -242,6 +243,9 @@
 				}
 			}
 		}
+
+		// .dropdown-menu {
+		// }
     }
 
 

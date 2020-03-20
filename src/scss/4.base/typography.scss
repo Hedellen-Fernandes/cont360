@@ -71,7 +71,12 @@
 
                 h2 {
                     line-height: 27px;
-                }
+				}
+
+				&.header-controls {
+					margin-top: 25px;
+					margin-bottom: 1px;
+				}
 			}
 
 			.subtitle {
@@ -107,6 +112,18 @@
 
 				button:nth-child(even) {
 					margin: 0 7px;
+				}
+
+				.search {
+					form {
+						padding: 0;
+
+						input {
+							margin: 0;
+
+							height: 79px;
+						}
+					}
 				}
 			}
 
