@@ -153,6 +153,29 @@
 					}
 				}
 			}
+
+			&.btn-rounded {
+				text-align: center;
+
+				.circle {
+					width: 90px;
+					height: 90px;
+
+					border: 1px solid $color-gray-darkest;
+					@include border-radius(100%);
+
+					&.groups-enterprise {
+						background: $color-info;
+					}
+				}
+
+				.text {
+					margin-top: 2px;
+
+					font-size: 15px;
+					font-weight: 100;
+				}
+			}
 		}
     }
 

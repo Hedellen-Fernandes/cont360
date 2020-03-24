@@ -88,6 +88,11 @@
 			}
 
 			.subtitle {
+
+				&.border-bottom {
+					border-bottom: 1px solid $color-gray-border;
+				}
+
 				h2 {
 					padding: 10px 0 22px;
 				}
