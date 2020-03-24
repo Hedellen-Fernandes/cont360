@@ -691,17 +691,25 @@
 
 			<div class="row">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
-					<div class="row header-title header-controls">
+					<div class="row header-title border-bottom header-controls">
 						<div class="col-12 d-flex flex-row justify-content-between align-items-center">
-							<h2>Arquivos</h2>
+							<h2 class="col-2">
+								<a href="#">
+									<i class="icon back mr-3"></i>
+									Voltar
+								</a>
+							</h2>
 							<div class="action-button">
+								<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto">
+									Imprimir doc.
+								</button>
 								<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto">
 									Compartilhar
 								</button>
 								<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto">
 									Download
 								</button>
-								<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto">
+								<button type="button" class="btn btn-outline-cont btn-outline-primary">
 									Renomear
 								</button>
 								<button type="button" class="btn btn-outline-cont btn-outline-primary">
@@ -717,52 +725,30 @@
 							</div>
 						</div>
 					</div>
-					<div class="row subtitle">
-						<div class="col-md-12">
-							<div class="search flex-row justify-content-start align-items-center">
-								<form class="form-inline w-100 flex-row justify-content-start align-items-center">
-									<input class="form-control flex-grow-1" type="search"
-										placeholder="Pesquisar em arquivos" aria-label="Pesquisar em arquivos">
-									<button class="btn btn-info" type="submit">
-										<svg data-name="Grupo 99" xmlns="http://www.w3.org/2000/svg" width="17.272"
-											height="17.269">
-											<g data-name="Grupo 98 teste">
-												<path data-name="Caminho 177"
-													d="M15.437 1.832a6.265 6.265 0 00-9.164 8.535l-.746.746-.76-.76a.444.444 0 00-.628 0L.575 13.916a1.964 1.964 0 102.778 2.778l3.563-3.563a.444.444 0 000-.628l-.76-.76.746-.746a6.265 6.265 0 008.535-9.164zM2.725 16.065A1.077 1.077 0 111.2 14.544l1.992-1.987 1.521 1.52zm2.617-2.617l-1.522-1.52.632-.632 1.521 1.521zm9.467-3.384a5.377 5.377 0 111.575-3.8 5.383 5.383 0 01-1.576 3.8z" />
-											</g>
-										</svg>
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 
-			<section class="row no-footer" id="archiveContainer">
+			<section class="row" id="ArquivosViewer">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
-					<div class="col-3 archive">
-						<div class="d-flex justify-content-between align-items-top icon-badge">
-							<input type="checkbox" name="arquivo" id="arquivo">
-							<i class="icon attachament"></i>
-						</div>
-						<div class="d-flex justify-content-between align-items-top mt-4">
-							<div class="btn-group dropdown show">
-								<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false">
-									<span class="hamburguer"></span>
-								</button>
-								<div class="dropdown-menu show">
-									<a class="dropdown-item" href="#">Compartilhar</a>
-									<a class="dropdown-item" href="#">Download</a>
-									<a class="dropdown-item" href="#">Renomear</a>
-									<a class="dropdown-item" href="#">Copiar</a>
-									<a class="dropdown-item" href="#">Mover</a>
-									<a class="dropdown-item" href="#"><i class="icon close-danger mr-2"></i> Excluir</a>
+					<div class="row">
+						<div
+							class="col-md-12 doc-viewer-header d-flex flex-row justify-content-between align-items-start">
+							<h2>Caixa de entrada</h2>
+							<div class="doc-viewer-details d-flex flex-row justify-content-center align-items-center">
+								<div class="item-detail">
+									<small><b>Upload por</b> Fabio Cavalcante em 19/10/2019 às 20h50</small>
+									<h4>Documento.zip</h4>
+								</div>
+								<div class="item-detail">
+									<small><b>Vencimento em</b> 10/11/2019</small>
+									<h4>Valor R$110,00</h4>
 								</div>
 							</div>
-							<span class="name">Novo-Arquivo.txt</span>
 						</div>
+					</div>
+
+					<div class="row viewer">
+						<img src="./dist/img/teste.jpg" alt="Teste">
 					</div>
 				</div>
 			</section>

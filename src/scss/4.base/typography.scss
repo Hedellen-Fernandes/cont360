@@ -58,6 +58,10 @@
                 line-height: 16px;
 			}
 
+			small {
+				color: $color-gray-darkest;
+			}
+
 			.header-title {
 				padding-right: 15px;
 				margin-top: 2.5rem;
@@ -76,6 +80,10 @@
 				&.header-controls {
 					margin-top: 25px;
 					margin-bottom: 1px;
+
+					&.border-bottom {
+						padding-bottom: 17px;
+					}
 				}
 			}
 

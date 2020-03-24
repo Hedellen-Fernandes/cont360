@@ -18,6 +18,57 @@
 				}
 			}
 		}
+
+		#ArquivosViewer {
+			min-height: calc(100% - 86px);
+
+			.doc-viewer-header {
+				margin-top: 45px;
+
+				.doc-viewer-details {
+					.item-detail {
+						position: relative;
+
+						small { font-size: 14px; }
+						h4 {
+							font-weight: 100;
+							font-size: 22px;
+						}
+
+						&:first-child {
+							text-align: right;
+						}
+
+						&:last-child {
+							padding-left: 20px;
+							margin-left: 20px;
+
+							&:after {
+								content: '';
+
+								position: absolute;
+								top: 0;
+								left: 0;
+
+								width: 1px;
+								height: 90%;
+
+								background: $color-gray-border;
+							}
+						}
+					}
+				}
+
+			}
+
+			.viewer {
+				padding: 30px 90px 70px 60px;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
     }
 
 
