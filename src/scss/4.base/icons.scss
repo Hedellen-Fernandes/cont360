@@ -191,7 +191,77 @@
 
                 @include border-radius(100%);
                 @include transform(translateY(3px));
-            }
+			}
+
+			&.new-employed {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/rh/novo-funcionario.svg) center center no-repeat;
+                background-size: 78%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.new-taxpayer {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/rh/novo-contribuinte.svg) center center no-repeat;
+                background-size: 78%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.new-trainee {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/rh/novo-estagiario.svg) center center no-repeat;
+                background-size: 78%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.request-vacation {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/rh/solicitar-ferias.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.request-recession {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/rh/solicitar-recisao.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.request-removal {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/rh/solicitar-afastamento.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.event-payment {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/rh/evento-em-folha.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
         }
 
         .circle {

@@ -113,11 +113,15 @@
 				background-color: $color-info;
 				border-color: $color-info;
 
-				&.dropdown-toggle {
+				&.rounded {
 					width: 30px;
 					height: 30px;
 
-					@include border-radius(100%);
+					border-radius: 100% !important;
+
+					i {
+						margin-left: -4.5px;
+					}
 
 					&:after {
 						display: none;
