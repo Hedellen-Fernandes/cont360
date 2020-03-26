@@ -262,6 +262,46 @@
 
                 @include transform(translateY(3px));
 			}
+
+			&.pdf {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/documentos/pdf.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.txt {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/documentos/txt.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.xls {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/documentos/xls.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.contabil {
+				width: 81px;
+                height: 81px;
+
+                background: url(./img/icons/documentos/contabil.svg) center center no-repeat;
+                background-size: 89%;
+
+                @include transform(translateY(3px));
+			}
         }
 
         .circle {
