@@ -1,0 +1,44 @@
+/*  ==========================================================================
+    Box Attachaments
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.box-attachaments {
+			padding: 10px 20px;
+
+			border: 1px solid $color-gray-border;
+			@include border-radius(4px);
+
+			p, span {
+				font-weight: 100;
+			}
+
+			span {
+				padding: 5px 15px;
+
+				border: 1px solid $color-gray-border;
+				@include border-radius(4px);
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

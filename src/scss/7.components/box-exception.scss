@@ -1,0 +1,44 @@
+/*  ==========================================================================
+    Box Exception
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.box-exception {
+			padding: 10px;
+			padding-bottom: 0;
+
+			background: $color-gray-darkest;
+			text-align: center;
+
+			@include border-radius(4px);
+
+			small {
+				display: inline-block;
+				margin: 10px 0 20px;
+
+				text-align: center;
+				color: $color-gray-light;
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

@@ -26,8 +26,15 @@
 			-webkit-appearance: none;
 			-moz-appearance:    none;
 			appearance:         none;
+
 		}
-    }
+
+	}
+
+	.select-dark {
+		color: $color-gray-light;
+		background: $color-gray-darkest url(img/icons/forms/arrow-select.svg) right 10px center no-repeat;
+	}
 
 
     /*
