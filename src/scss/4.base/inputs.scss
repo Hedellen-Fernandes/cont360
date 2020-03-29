@@ -58,6 +58,10 @@
 					border-bottom: 1px solid $color-gray-darkest;
 				}
 
+				&.no-border-bottom {
+					border-bottom: none;
+				}
+
 				>.body-form {
 					height: calc(100% - 10px);
 					padding-right: 20px;
