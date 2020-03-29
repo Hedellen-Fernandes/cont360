@@ -702,24 +702,21 @@
 						<div class="col-10">
 							<div class="step-counter d-flex flex-row justify-content-end align-items-center">
 								<div>
-									<span class="number">1</span>
+									<span class="number active">1</span>
 								</div>
 								<div>
 									<span class="number">2</span>
 								</div>
 								<div>
-									<span class="number active">3</span>
+									<span class="number">3</span>
 								</div>
 							</div>
 						</div>
 						<hr />
 					</div>
 					<div class="row subtitle border-bottom">
-						<div class="col-md-6">
-							<h2>Novo funcionário</h2>
-						</div>
-						<div class="col-md-6">
-							<h2 class="check-data">Confira todas as informações</h2>
+						<div class="col-md-12">
+							<h2>Novo contribuinte</h2>
 						</div>
 					</div>
 				</div>
@@ -727,6 +724,7 @@
 			<section class="row no-footer" id="taskList">
 				<div class="col-11 offset-1">
 					<form action="" class="form-cont">
+						<!-- Dados do Funcionário -->
 						<div class="row step">
 							<div class="col-md-9 body-form">
 								<div class="row">
@@ -784,6 +782,7 @@
 							</div>
 						</div>
 
+						<!-- Dados dos Pais do Funcionário -->
 						<div class="row step">
 							<div class="col-md-9 body-form">
 								<div class="row">
@@ -851,35 +850,23 @@
 							</div>
 						</div>
 
+						<!-- Documentos do Empregado -->
 						<div class="row step">
 							<label class="col-md-12 mt-0"><small>Documentos do empregado</small></label>
 							<div class="col-md-9 body-form">
 								<div class="row">
-									<div class="col-md-3">
-										<input class="form-control" type="text" placeholder="Número CTPS">
-									</div>
-									<div class="col-md-3">
-										<input class="form-control" type="text" placeholder="Série CTPS">
-									</div>
-									<div class="col-md-2">
-										<input class="form-control" type="text" placeholder="UF">
+									<div class="col-md-4">
+										<input class="form-control" type="date" placeholder="RNE">
 									</div>
 									<div class="col-md-4">
-										<input class="form-control" type="date" placeholder="Expedição">
-									</div>
-
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="RNE">
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Tipo de visto">
+										<input class="form-control" type="date" placeholder="Tipo de visto">
 									</div>
 									<div class="col-md-4">
 										<input class="form-control" type="date" placeholder="Validade">
 									</div>
 
 									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="CPF">
+										<input class="form-control" type="date" placeholder="CPF">
 									</div>
 									<div class="col-md-4">
 										<input class="form-control" type="text" placeholder="Reservista">
@@ -923,15 +910,28 @@
 								<div class="w-100">
 									<input class="form-control" type="date" placeholder="Validade">
 								</div>
-								<div class="w-100">
-									<select class="select-dark">
-										<option>Seguro desemprego</option>
-									</select>
-								</div>
 							</div>
 						</div>
 
 						<div class="row step">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6">
+										<select>
+											<option>É Cadastrado como autônomo em SP?</option>
+										</select>
+									</div>
+									<div class="col-md-6">
+										<select>
+											<option>Tem múltiplos vinculos e já recolhe para o INSS?</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Dependentes -->
+						<div class="row step no-border-bottom">
 							<label class="col-md-12 mt-0"><small>Dependentes</small></label>
 							<div class="col-md-11">
 								<div class="row">
@@ -959,195 +959,7 @@
 							</div>
 						</div>
 
-						<div class="row step">
-							<div class="col-md-11">
-								<div
-									class="w-100 box-attachaments d-flex flex-row justify-content-start align-items-center">
-									<p class="mr-1">Doc.</p>
-									<span class="ml-2">
-										documento_robertacampos.pdf
-										<i class="icon close-danger ml-2"></i>
-									</span>
-								</div>
-							</div>
-							<div class="col-md-1 d-flex flex-row justify-content-center align-items-center">
-								<button type="button" class="btn btn-info rounded" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false">
-									<i class="icon plus"></i>
-								</button>
-							</div>
-						</div>
-
-						<div class="row step">
-							<div class="col-md-12">
-								<div class="row">
-									<label class="col-md-12" for=""><small>Dados do contrato</small></label>
-
-									<div class="col-md-4">
-										<select>
-											<option>Tipo do contrato</option>
-										</select>
-									</div>
-									<div class="col-md-4">
-										<select>
-											<option>CLT Quantidade de dias de experiência</option>
-										</select>
-									</div>
-									<div class="col-md-4">
-										<select>
-											<option>Situação</option>
-										</select>
-									</div>
-
-									<div class="col-md-4">
-										<select>
-											<option>% do adiantamento quinzenal</option>
-										</select>
-									</div>
-									<div class="col-md-4">
-										<select>
-											<option>Quantidade horas semanais</option>
-										</select>
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="date" placeholder="Data da admissão">
-									</div>
-
-									<div class="col-md-4">
-										<input class="form-control" type="text"
-											placeholder="Nomenclatura / Cargo / Função">
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Valor salário mensal">
-									</div>
-									<div class="col-md-4">
-										<select>
-											<option>Dias da semana</option>
-										</select>
-									</div>
-
-									<div class="col-md-4">
-										<select>
-											<option>Início de expediente</option>
-										</select>
-									</div>
-									<div class="col-md-4">
-										<select>
-											<option>Fim de expediente</option>
-										</select>
-									</div>
-									<div class="col-md-4">
-										<select>
-											<option>Quantidade de horas de intervalo</option>
-										</select>
-									</div>
-
-									<div class="col-md-4">
-										<select>
-											<option>Contribuição sindical (ano vigente)</option>
-										</select>
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text"
-											placeholder="Departamento / Obra / Centro de custo">
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text"
-											placeholder="Valor da contribuição sindical paga este ano">
-									</div>
-
-									<div class="col-md-4">
-										<input class="form-control" type="text"
-											placeholder="Vale Transporte - Custo diário">
-
-										<select class="mb-0">
-											<option>Descontar do empregado</option>
-										</select>
-									</div>
-
-									<div class="col-md-8 d-flex flex-row justify-content-start align-items-stretch">
-										<textarea class="form-control mb-0" cols=" 30"
-											placeholder="Observações"></textarea>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="row step">
-							<div class="col-md-12">
-								<div class="row">
-									<label class="col-md-12 mt-0" for=""><small>Outros pagamentos fixos para o
-											empregado</small></label>
-
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Ajuda de custo">
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Auxílio refeição">
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Auxílio alimentação">
-									</div>
-
-									<div class="col-md-12">
-										<input class="form-control" type="text"
-											placeholder="Outros proventos, favor especificar">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="row step">
-							<div class="col-md-12">
-								<div class="row">
-									<label class="col-md-12 mt-0" for=""><small>Descontos autorizados</small></label>
-
-									<div class="col-md-4">
-										<select>
-											<option>Assistência Médica</option>
-										</select>
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Se sim, informar valor">
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text"
-											placeholder="Se sim, informar tipo de plano">
-									</div>
-
-									<div class="col-md-4">
-										<select>
-											<option>Assistência Odontológica</option>
-										</select>
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Se sim, informar valor">
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text"
-											placeholder="Se sim, informar tipo de plano">
-									</div>
-
-									<div class="col-md-12">
-										<select>
-											<option>Contribuição sindical (autorizado pelo funcionário)</option>
-										</select>
-									</div>
-
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Vale refeição">
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Seguro de vida">
-									</div>
-									<div class="col-md-4">
-										<input class="form-control" type="text" placeholder="Estacionamento">
-									</div>
-								</div>
-							</div>
-						</div>
-
+						<!-- Anexos -->
 						<div class="row step no-border-bottom">
 							<div class="col-md-11">
 								<div
@@ -1175,8 +987,8 @@
 								</button>
 
 								<button type="button" class="btn btn-outline-cont btn-outline-info">
-									Concluir cadastro
-									<i class="icon save"></i>
+									Próximo passo
+									<i class="icon next"></i>
 								</button>
 							</div>
 						</div>
