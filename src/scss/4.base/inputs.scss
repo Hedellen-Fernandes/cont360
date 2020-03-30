@@ -39,6 +39,15 @@
 			appearance: none;
 		}
 
+		.date-picker {
+			background: url(img/icons/forms/date.svg) right 20px center no-repeat;
+
+			&::-webkit-calendar-picker-indicator,
+			&::-webkit-inner-spin-button {
+				display: none;
+			}
+		}
+
 		.form-cont {
 			label {
 				margin: 15px 0 5px;
