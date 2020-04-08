@@ -1,0 +1,35 @@
+/*  ==========================================================================
+    Pill
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.pill {
+			height: 60px;
+			padding: 20px 15px;
+
+			background: $color-gray-light;
+			border: 1px solid $color-gray-border;
+			@include border-radius(4px);
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }
