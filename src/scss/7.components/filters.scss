@@ -32,37 +32,41 @@
 				}
 			}
 
-			.filters {
-				padding-right: 5px;
-				padding-left: 35px;
+		}
+		.filters {
+			padding-right: 5px;
+			padding-left: 35px;
 
-				form {
-					padding: 20px 0 0;
-					border-top: 1px solid $color-gray-border;
+			form {
+				padding: 20px 0 0;
+				border-top: 1px solid $color-gray-border;
 
-					& > div {
-						height: 42px;
-					}
-
-					label {
-						font-weight: 400;
-					}
-
-					.custom-select {
-						margin-left: 30px;
-
-						width: 198px;
-						height: 42px;
-
-						border-color: $color-gray-border;
-						color: $color-gray-dark;
-					}
+				&.no-border {
+					border: 0;
 				}
 
-				.form-control {
-					padding: 20px;
-					margin-bottom: 0;
+				& > div {
+					height: 42px;
 				}
+
+				label {
+					font-weight: 400;
+				}
+
+				.custom-select {
+					margin-left: 30px;
+
+					width: 198px;
+					height: 42px;
+
+					border-color: $color-gray-border;
+					color: $color-gray-dark;
+				}
+			}
+
+			.form-control {
+				padding: 20px;
+				margin-bottom: 0;
 			}
 		}
     }

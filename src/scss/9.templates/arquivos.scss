@@ -9,8 +9,14 @@
 	 @media only screen {
 		#arquivos {
 			.header-title {
+				.action-button {
+					margin-left: -53px;
+				}
+
 				.btn-outline-cont {
-					min-width: 110px !important;
+					min-width: auto !important;
+
+					padding-right: 45px;
 
 					&:nth-child(even) {
 						margin:0 5px;
@@ -24,6 +30,7 @@
 
 			.doc-viewer-header {
 				margin-top: 45px;
+				padding-right: 30px;
 
 				.doc-viewer-details {
 					.item-detail {

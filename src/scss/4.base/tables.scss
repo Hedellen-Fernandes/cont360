@@ -29,6 +29,13 @@
 		.table-header {
 			padding-top: 1.875rem;
 
+			&.dark {
+				padding: 20px 0;
+				background: $color-gray-light;
+
+				border-bottom: 1px solid $color-gray-border;
+			}
+
 			.task-list-title {
 				margin-left: 1.25rem;
 

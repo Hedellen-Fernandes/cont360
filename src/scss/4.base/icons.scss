@@ -125,7 +125,12 @@
                 height: 18px;
 
                 background: url(./img/icons/actions/editar.svg) center center no-repeat;
-                background-size: 100%;
+				background-size: 100%;
+
+				&.white {
+					background: url(./img/icons/actions/editar-white.svg) center center no-repeat;
+					background-size: 94%;
+				}
 
                 @include transform(translateY(3px));
             }
@@ -149,7 +154,38 @@
 					background: url(./img/icons/forms/adicionar-info.svg) center center no-repeat;
 					background-size: 100%;
 				}
-            }
+
+				&.dark-rounded,
+				&.dark-primary {
+					width: 25px;
+					height: 25px;
+
+					background: url(./img/icons/actions/plus-dark.svg) center center no-repeat;
+					background-size: 90%;
+				}
+
+				&.dark-primary {
+					background: url(./img/icons/actions/plus-rounded-light.svg) center center no-repeat;
+					background-size: 90%;
+				}
+
+			}
+
+			&.play-outline {
+				width: 25px;
+				height: 25px;
+
+				background: url(./img/icons/actions/play-outline.svg) center center no-repeat;
+				background-size: 100%;
+			}
+
+			&.menagement-task-base {
+				width: 25px;
+				height: 25px;
+
+				background: url(./img/icons/actions/menagement-task-base.svg) center center no-repeat;
+				background-size: 100%;
+			}
 
 			&.pen-edit {
 				width: 14px;
@@ -299,6 +335,36 @@
 
                 background: url(./img/icons/documentos/contabil.svg) center center no-repeat;
                 background-size: 89%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.download {
+				width: 18px;
+                height: 20px;
+
+                background: url(./img/icons/documentos/download-black.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.share {
+				width: 18px;
+                height: 20px;
+
+                background: url(./img/icons/documentos/compartilhar-black.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(3px));
+			}
+
+			&.to-file {
+				width: 18px;
+                height: 20px;
+
+                background: url(./img/icons/mensagens/arquivos.svg) center center no-repeat;
+                background-size: 100%;
 
                 @include transform(translateY(3px));
 			}

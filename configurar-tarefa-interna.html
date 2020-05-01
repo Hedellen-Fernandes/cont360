@@ -692,7 +692,7 @@
 			<div class="row">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
 					<div class="row header-title">
-						<h2 class="col-12">Caixa de Entrada</h2>
+						<h2 class="col-12">Configurar tarefas internas</h2>
 					</div>
 					<div class="row filtros">
 						<div class="search col-4">
@@ -711,7 +711,7 @@
 							</form>
 						</div>
 						<div class="filters col-8 d-flex flex-row justify-content-start align-items-center">
-							<form class="form-inline w-100 d-flex flex-row justify-content-start align-items-stretch">
+							<form class="form-inline w-100 d-flex flex-row justify-content-between align-items-stretch">
 								<div class="d-flex flex-row justify-content-start align-items-middle mr-4">
 									<label class="mr-2" for="inlineFormCustomSelectPref">Filtrar por</label>
 									<select class="custom-select mr-auto">
@@ -719,100 +719,47 @@
 									</select>
 								</div>
 
-								<div class="form-group d-flex flex-row align-items-start flex-grow-1">
-									<input type="text" class="form-control w-100" id="digiteAqui"
-										aria-describedby="searchText" placeholder="Digite aqui">
-								</div>
+								<button type="button" class="btn btn-outline-cont btn-outline-primary">
+									Importar tarefas
+									<i class="icon dark-primary plus"></i>
+								</button>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<section class="row table-header">
-				<div class="col-11 pr-37 offset-1 d-flex flex-row justify-content-between align-items-center">
-					<div class="task-list-title">
-						<div class="form-checkbox">
-							<input class="form-check-input" type="checkbox" value="" id="first">
-						</div>
-						<h4>Marcar todas</h4>
-					</div>
-
-					<div class="action-button">
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Compartilhar
-							<i class="icon share ml-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Download
-							<i class="icon download ml-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Arquivar
-							<i class="icon to-file ml-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Excluir
-							<i class="icon close-danger ml-3"></i>
-						</button>
-					</div>
+			<section class="row table-header dark">
+				<div class="col-11 pr-37 offset-1 d-flex flex-row justify-content-end align-items-center">
+					<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto pr-5">
+						<span class="mr-3">Gerenciar banco de tarefas</span>
+						<i class="icon menagement-task-base"></i>
+					</button>
 				</div>
 			</section>
 
 			<section class="row headered" id="taskList">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
-					<table class="table table-borderless custom-action list-itens">
+					<table class="table table-borderless list-itens">
 						<thead>
 							<tr>
-								<th scope="col"></th>
-								<th scope="col">Documento</th>
+								<th scope="col">Tarefa</th>
+								<th scope="col">Recorrência</th>
+								<th scope="col">Prox. Venc.</th>
+								<th scope="col">Gerar tarefa em</th>
 								<th scope="col">Status</th>
-								<th scope="col">Upload</th>
-								<th scope="col">Vencimento</th>
-								<th scope="col">Valor R$</th>
-								<th scope="col">Responsável</th>
 								<th scope="col"></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="first">
+								<td class="text-left">
+									Lançar/Importar movimento fiscal
 								</td>
-								<td>
-									<small>Upload por Fábio Cavalcante</small> <br>
-									Relatótio.docx
-								</td>
+								<td>Mensal</td>
+								<td>08/10/2019</td>
+								<td>10 dias antes</td>
 								<td><i class="circle primary"> </i></td>
-								<td>22/09/2019</td>
-								<td>22/09/2019</td>
-								<td>150</td>
-								<td>
-									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
-										class="rounded-circle avatar">
-								</td>
-								<td class="text-right">
-									<button class="btn btn-outline">
-										<i class="icon edit"></i>
-									</button>
-								</td>
-							</tr>
-							<tr class="active">
-								<td class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="first">
-								</td>
-								<td>
-									<small>Upload por Fábio Cavalcante</small> <br>
-									Relatótio.docx
-								</td>
-								<td><i class="circle danger"> </i></td>
-								<td>22/09/2019</td>
-								<td>22/09/2019</td>
-								<td>150</td>
-								<td>
-									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
-										class="rounded-circle avatar">
-								</td>
 								<td class="text-right">
 									<button class="btn btn-outline">
 										<i class="icon edit"></i>
@@ -825,9 +772,13 @@
 			</section>
 			<section class="row">
 				<div class="col-11 pr-37 pb-5 offset-1 d-flex flex-row justify-content-end align-items-center">
-					<button type="button" class="btn btn-outline-cont btn-outline-primary">
+					<button type="button" class="btn btn-outline-cont btn-outline-primary mr-2">
 						Exportar em lista
 						<i class="icon export"></i>
+					</button>
+					<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto pr-5">
+						<span class="mr-3">Iniciar geração de atividades</span>
+						<i class="icon play-outline"></i>
 					</button>
 				</div>
 			</section>

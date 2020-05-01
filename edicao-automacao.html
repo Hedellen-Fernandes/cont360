@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Cont 360 - Caixa de Entrada</title>
+	<title>Cont 360 - Tarefas</title>
 
 	<link rel="stylesheet" href="./dist/bundle.css">
 </head>
 
 <body>
+
 	<nav class="navbar navbar-dark navbar-expand-lg fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">
@@ -36,12 +37,13 @@
 		</div>
 	</nav>
 
-	<section id="caixaEntrada">
+	<section id="usuario">
 		<div class="container">
+
 			<div id="nav" class="menu d-flex flex-column justify-content-start align-items-center">
 				<ul class="menu-items">
 					<li>
-						<a href="/" class="d-flex flex-row justify-content-start align-items-center">
+						<a href="./" class="d-flex flex-row justify-content-start align-items-center">
 							<svg xmlns="http://www.w3.org/2000/svg" width="29.882" height="23.286">
 								<g id="Grupo_168" data-name="Grupo 168" transform="translate(-393.889 -94)">
 									<g id="_018-control" data-name="018-control" transform="translate(393.889 94)">
@@ -86,7 +88,7 @@
 					</li>
 					<li class="search">
 						<div class="flex-row justify-content-start align-items-center">
-							<form class="form-inline w-100 flex-row justify-content-start align-items-center">
+							<form class="form-inline form-cont w-100 flex-row justify-content-start align-items-center">
 								<input class="form-control" type="search" placeholder="Pesquisar"
 									aria-label="Pesquisar">
 								<button class="btn btn-info" type="submit">
@@ -102,7 +104,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="tarefas.html" class="d-flex flex-row justify-content-start align-items-center">
+						<a href="#" class="d-flex active flex-row justify-content-start align-items-center">
 							<svg id="_019-evaluation" data-name="019-evaluation" xmlns="http://www.w3.org/2000/svg"
 								width="26.661" height="26.661">
 								<g id="Grupo_33" data-name="Grupo 33">
@@ -143,8 +145,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="./entrada.html"
-							class="d-flex active flex-row justify-content-start align-items-center">
+						<a href="./entrada.html" class="d-flex flex-row justify-content-start align-items-center">
 							<svg id="inbox" xmlns="http://www.w3.org/2000/svg" width="26.661" height="21.329">
 								<g id="Grupo_43" data-name="Grupo 43" transform="translate(9.479 14.774)">
 									<g id="Grupo_42" data-name="Grupo 42">
@@ -165,7 +166,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="d-flex flex-row justify-content-start align-items-center" disabled>
+						<a href="#" class="d-flex flex-row justify-content-start align-items-center">
 							<svg id="_020-presentation" data-name="020-presentation" xmlns="http://www.w3.org/2000/svg"
 								width="26.661" height="21.329">
 								<path id="Caminho_60" data-name="Caminho 60" class="cls-1"
@@ -691,147 +692,138 @@
 
 			<div class="row">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
-					<div class="row header-title">
-						<h2 class="col-12">Caixa de Entrada</h2>
+					<div class="row header-title border-bottom">
+						<h2 class="col-2">
+							<a href="#">
+								<i class="icon back mr-3"></i>
+								Voltar
+							</a>
+						</h2>
+						<hr />
 					</div>
-					<div class="row filtros">
-						<div class="search col-4">
-							<form class="form-inline w-100 flex-row justify-content-between align-items-center">
-								<input class="form-control col-10" type="search" placeholder="Pesquisar"
-									aria-label="Pesquisar">
-								<button class="btn btn-info" type="submit">
-									<svg data-name="Grupo 99" xmlns="http://www.w3.org/2000/svg" width="17.272"
-										height="17.269">
-										<g data-name="Grupo 98">
-											<path data-name="Caminho 177"
-												d="M15.437 1.832a6.265 6.265 0 00-9.164 8.535l-.746.746-.76-.76a.444.444 0 00-.628 0L.575 13.916a1.964 1.964 0 102.778 2.778l3.563-3.563a.444.444 0 000-.628l-.76-.76.746-.746a6.265 6.265 0 008.535-9.164zM2.725 16.065A1.077 1.077 0 111.2 14.544l1.992-1.987 1.521 1.52zm2.617-2.617l-1.522-1.52.632-.632 1.521 1.521zm9.467-3.384a5.377 5.377 0 111.575-3.8 5.383 5.383 0 01-1.576 3.8z" />
-										</g>
-									</svg>
-								</button>
-							</form>
-						</div>
-						<div class="filters col-8 d-flex flex-row justify-content-start align-items-center">
-							<form class="form-inline w-100 d-flex flex-row justify-content-start align-items-stretch">
-								<div class="d-flex flex-row justify-content-start align-items-middle mr-4">
-									<label class="mr-2" for="inlineFormCustomSelectPref">Filtrar por</label>
-									<select class="custom-select mr-auto">
-										<option selected>NOME</option>
-									</select>
-								</div>
-
-								<div class="form-group d-flex flex-row align-items-start flex-grow-1">
-									<input type="text" class="form-control w-100" id="digiteAqui"
-										aria-describedby="searchText" placeholder="Digite aqui">
-								</div>
-							</form>
+					<div class="row subtitle border-bottom">
+						<div class="col-md-12">
+							<h2>Configurar automação de tarefas</h2>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<section class="row table-header">
-				<div class="col-11 pr-37 offset-1 d-flex flex-row justify-content-between align-items-center">
-					<div class="task-list-title">
-						<div class="form-checkbox">
-							<input class="form-check-input" type="checkbox" value="" id="first">
+			<section class="row no-footer pt-0" id="taskList">
+				<div class="col-11 offset-1">
+					<form action="" class="form-cont">
+						<!-- Dados do Funcionário -->
+						<div class="row step">
+							<div
+								class="col-md-12 mt-4 side-form d-flex flex-row justify-content-start align-items-center">
+								<div class="photo-avatar">
+									<div class="controls d-flex flex-row justify-content-center align-items-start">
+										<button class="btn btn-outline">
+											<i class="icon plus info"></i>
+										</button>
+										<button class="btn btn-outline">
+											<i class="icon pen-edit"></i>
+										</button>
+									</div>
+								</div>
+								<h3 class="ml-5">Novo Funcionário</h3>
+							</div>
 						</div>
-						<h4>Marcar todas</h4>
-					</div>
 
-					<div class="action-button">
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Compartilhar
-							<i class="icon share ml-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Download
-							<i class="icon download ml-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Arquivar
-							<i class="icon to-file ml-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Excluir
-							<i class="icon close-danger ml-3"></i>
-						</button>
-					</div>
-				</div>
-			</section>
+						<div class="row step">
+							<div class="col-12 d-flex flex-column justify-content-start align-items-stretch">
+								<table class="table table-borderless list-itens">
+									<thead>
+										<tr>
+											<th scope="col">Nome da tarefa</th>
+											<th scope="col">Prazo</th>
+											<th scope="col">Pessoa responsável</th>
+											<th scope="col"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												Tarefa 01
+											</td>
+											<td>10 dias úteis</td>
+											<td><img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+													class="rounded-circle avatar"></td>
+											<td class="text-right">
+												<button class="btn btn-outline">
+													<i class="icon edit"></i>
+												</button>
+												<button class="btn btn-outline">
+													<i class="icon close-danger"></i>
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 
-			<section class="row headered" id="taskList">
-				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
-					<table class="table table-borderless custom-action list-itens">
-						<thead>
-							<tr>
-								<th scope="col"></th>
-								<th scope="col">Documento</th>
-								<th scope="col">Status</th>
-								<th scope="col">Upload</th>
-								<th scope="col">Vencimento</th>
-								<th scope="col">Valor R$</th>
-								<th scope="col">Responsável</th>
-								<th scope="col"></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="first">
-								</td>
-								<td>
-									<small>Upload por Fábio Cavalcante</small> <br>
-									Relatótio.docx
-								</td>
-								<td><i class="circle primary"> </i></td>
-								<td>22/09/2019</td>
-								<td>22/09/2019</td>
-								<td>150</td>
-								<td>
-									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
-										class="rounded-circle avatar">
-								</td>
-								<td class="text-right">
-									<button class="btn btn-outline">
-										<i class="icon edit"></i>
-									</button>
-								</td>
-							</tr>
-							<tr class="active">
-								<td class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="first">
-								</td>
-								<td>
-									<small>Upload por Fábio Cavalcante</small> <br>
-									Relatótio.docx
-								</td>
-								<td><i class="circle danger"> </i></td>
-								<td>22/09/2019</td>
-								<td>22/09/2019</td>
-								<td>150</td>
-								<td>
-									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
-										class="rounded-circle avatar">
-								</td>
-								<td class="text-right">
-									<button class="btn btn-outline">
-										<i class="icon edit"></i>
-									</button>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+						<div class="row step">
+							<h2 class="col-12 mt-3 mb-4">Tarefa</h2>
+							<div class="col-md-8">
+								<input class="form-control" type="text" placeholder="Titulo">
+							</div>
+							<div class="col-md-4 range-days d-flex flex-row justify-content-center align-items-center">
+								<span>Prazo</span>
+								<input class="form-control" type="text" placeholder="0">
+								<span>dias após</span>
+							</div>
+							<div class="col-md-8">
+								<input class="form-control" type="text" placeholder="Descrição">
+							</div>
+							<div class="col-md-4">
+								<select>
+									<option>Gênero</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row step no-border-bottom">
+							<div class="col-md-11">
+								<div
+									class="w-100 box-attachaments d-flex flex-row justify-content-start align-items-center">
+									<p class="mr-1">Participantes</p>
+									<span class="ml-2">
+										João Kleber
+										<i class="icon close-danger ml-2"></i>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-1 d-flex flex-row justify-content-center align-items-center">
+								<button type="button" class="btn btn-info rounded" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									<i class="icon plus"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="row mt-3 mb-4">
+							<div class="col-md-12 text-right">
+								<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto mr-2">
+									Cancelar
+									<i class="icon close-danger ml-3"></i>
+								</button>
+
+								<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto mr-2">
+									incluir
+									<i class="icon plus dark-rounded"></i>
+								</button>
+
+								<button type="button" class="btn btn-outline-cont btn-outline-info w-auto">
+									salvar
+									<i class="icon save"></i>
+								</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</section>
-			<section class="row">
-				<div class="col-11 pr-37 pb-5 offset-1 d-flex flex-row justify-content-end align-items-center">
-					<button type="button" class="btn btn-outline-cont btn-outline-primary">
-						Exportar em lista
-						<i class="icon export"></i>
-					</button>
-				</div>
-			</section>
-		</div>
+	</section>
+	</div>
 	</section>
 
 	<script src="./dist/bundle.js"></script>

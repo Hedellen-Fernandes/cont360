@@ -81,6 +81,14 @@
 					margin-top: 25px;
 					margin-bottom: 1px;
 
+					> div[class^="col-"] {
+						padding-left: 0;
+					}
+
+					a {
+						margin-left: -15px;
+					}
+
 					&.border-bottom {
 						padding-bottom: 17px;
 					}

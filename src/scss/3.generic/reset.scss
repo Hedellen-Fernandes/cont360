@@ -39,6 +39,7 @@ img { height: auto; }
 section {
 	.container {
 		background: $color-white;
+		border-right: 1px solid $color-gray-border;
 	}
 }
 
@@ -49,7 +50,7 @@ section {
 hr {
     margin: 0;
     padding: 0;
-    
+
     height: 2px;
 
     border: 0;

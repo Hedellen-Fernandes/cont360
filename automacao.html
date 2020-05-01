@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Cont 360 - Caixa de Entrada</title>
+	<title>Cont 360 - Automação</title>
 
 	<link rel="stylesheet" href="./dist/bundle.css">
 </head>
 
 <body>
+
 	<nav class="navbar navbar-dark navbar-expand-lg fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">
@@ -36,12 +37,13 @@
 		</div>
 	</nav>
 
-	<section id="caixaEntrada">
+	<section id="tarefas">
 		<div class="container">
+
 			<div id="nav" class="menu d-flex flex-column justify-content-start align-items-center">
 				<ul class="menu-items">
 					<li>
-						<a href="/" class="d-flex flex-row justify-content-start align-items-center">
+						<a href="./" class="d-flex flex-row justify-content-start align-items-center">
 							<svg xmlns="http://www.w3.org/2000/svg" width="29.882" height="23.286">
 								<g id="Grupo_168" data-name="Grupo 168" transform="translate(-393.889 -94)">
 									<g id="_018-control" data-name="018-control" transform="translate(393.889 94)">
@@ -102,7 +104,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="tarefas.html" class="d-flex flex-row justify-content-start align-items-center">
+						<a href="#" class="d-flex active flex-row justify-content-start align-items-center">
 							<svg id="_019-evaluation" data-name="019-evaluation" xmlns="http://www.w3.org/2000/svg"
 								width="26.661" height="26.661">
 								<g id="Grupo_33" data-name="Grupo 33">
@@ -143,8 +145,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="./entrada.html"
-							class="d-flex active flex-row justify-content-start align-items-center">
+						<a href="./entrada.html" class="d-flex flex-row justify-content-start align-items-center">
 							<svg id="inbox" xmlns="http://www.w3.org/2000/svg" width="26.661" height="21.329">
 								<g id="Grupo_43" data-name="Grupo 43" transform="translate(9.479 14.774)">
 									<g id="Grupo_42" data-name="Grupo 42">
@@ -165,7 +166,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="d-flex flex-row justify-content-start align-items-center" disabled>
+						<a href="#" class="d-flex flex-row justify-content-start align-items-center">
 							<svg id="_020-presentation" data-name="020-presentation" xmlns="http://www.w3.org/2000/svg"
 								width="26.661" height="21.329">
 								<path id="Caminho_60" data-name="Caminho 60" class="cls-1"
@@ -692,7 +693,14 @@
 			<div class="row">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
 					<div class="row header-title">
-						<h2 class="col-12">Caixa de Entrada</h2>
+						<h2 class="col-5">Automação de tarefas e atividades</h2>
+						<div class="col-4 d-flex flex-row justify-content-start align-items-end">
+							<div class="custom-control custom-switch">
+								<span>Atividades</span>
+								<input type="checkbox" class="custom-control-input" id="customSwitch1">
+								<label class="custom-control-label" for="customSwitch1">Tarefas</label>
+							</div>
+						</div>
 					</div>
 					<div class="row filtros">
 						<div class="search col-4">
@@ -711,107 +719,155 @@
 							</form>
 						</div>
 						<div class="filters col-8 d-flex flex-row justify-content-start align-items-center">
-							<form class="form-inline w-100 d-flex flex-row justify-content-start align-items-stretch">
+							<form class="form-inline w-100 d-flex justify-content-between">
 								<div class="d-flex flex-row justify-content-start align-items-middle mr-4">
 									<label class="mr-2" for="inlineFormCustomSelectPref">Filtrar por</label>
 									<select class="custom-select mr-auto">
 										<option selected>NOME</option>
 									</select>
 								</div>
+								<div class="form-group d-flex flex-row align-items-start justify-content-end">
+									<button type="button" class="btn btn-outline-cont btn-outline-primary">
+										Nova Atividade
 
-								<div class="form-group d-flex flex-row align-items-start flex-grow-1">
-									<input type="text" class="form-control w-100" id="digiteAqui"
-										aria-describedby="searchText" placeholder="Digite aqui">
+										<i class="icon plus-rounded"></i>
+									</button>
 								</div>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
+			<section class="row no-footer h-100" id="archiveContainer">
 
-			<section class="row table-header">
-				<div class="col-11 pr-37 offset-1 d-flex flex-row justify-content-between align-items-center">
-					<div class="task-list-title">
-						<div class="form-checkbox">
-							<input class="form-check-input" type="checkbox" value="" id="first">
+				<!-- Lista -->
+
+				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-start">
+					<h2 class="w-100 mb-4 mt-3">Configurar a repetição automática de tarefas</h2>
+					<div class="row w-100 ">
+						<div class="col-3">
+							<div class="archive slim">
+								<div class="d-flex justify-content-center align-items-top icon-badge">
+									<i class="icon new-employed"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-top">
+									<button type="button" class="btn btn-info rounded" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<i class="icon edit white"></i>
+									</button>
+									<span class="name">Novo <br> Funcionario</span>
+								</div>
+							</div>
 						</div>
-						<h4>Marcar todas</h4>
+						<div class="col-3">
+							<div class="archive slim">
+								<div class="d-flex justify-content-center align-items-top icon-badge">
+									<i class="icon new-taxpayer"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-top">
+									<button type="button" class="btn btn-info rounded" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<i class="icon edit white"></i>
+									</button>
+									<span class="name">Novo <br> Contribuinte</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="archive slim">
+								<div class="d-flex justify-content-center align-items-top icon-badge">
+									<i class="icon new-trainee"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-top">
+									<button type="button" class="btn btn-info rounded" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<i class="icon edit white"></i>
+									</button>
+									<span class="name">Novo <br> Estagiário</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="archive slim">
+								<div class="d-flex justify-content-center align-items-top icon-badge">
+									<i class="icon request-vacation"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-top">
+									<button type="button" class="btn btn-info rounded" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<i class="icon edit white"></i>
+									</button>
+									<span class="name">Solicitar <br> Férias</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="archive slim">
+								<div class="d-flex justify-content-center align-items-top icon-badge">
+									<i class="icon request-recession"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-top">
+									<button type="button" class="btn btn-info rounded" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<i class="icon edit white"></i>
+									</button>
+									<span class="name">Solicitar <br> Recisão</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="archive slim">
+								<div class="d-flex justify-content-center align-items-top icon-badge">
+									<i class="icon request-removal"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-top">
+									<button type="button" class="btn btn-info rounded" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<i class="icon edit white"></i>
+									</button>
+									<span class="name">Solicitar <br> Afastamento</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="archive slim">
+								<div class="d-flex justify-content-center align-items-top icon-badge">
+									<i class="icon event-payment"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-top">
+									<button type="button" class="btn btn-info rounded" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<i class="icon edit white"></i>
+									</button>
+									<span class="name">Evento <br> em Folha</span>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="action-button">
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Compartilhar
-							<i class="icon share ml-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Download
-							<i class="icon download ml-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Arquivar
-							<i class="icon to-file ml-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-cont btn-outline-primary">
-							Excluir
-							<i class="icon close-danger ml-3"></i>
-						</button>
-					</div>
-				</div>
-			</section>
 
-			<section class="row headered" id="taskList">
-				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
-					<table class="table table-borderless custom-action list-itens">
+					<!-- <div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
+					<table class="table table-borderless list-itens">
 						<thead>
 							<tr>
-								<th scope="col"></th>
-								<th scope="col">Documento</th>
+								<th scope="col">Tarefa</th>
+								<th scope="col">Recorrência</th>
+								<th scope="col">Próx. Venc</th>
+								<th scope="col">Gerar tarefa em</th>
 								<th scope="col">Status</th>
-								<th scope="col">Upload</th>
-								<th scope="col">Vencimento</th>
-								<th scope="col">Valor R$</th>
-								<th scope="col">Responsável</th>
 								<th scope="col"></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="first">
-								</td>
 								<td>
-									<small>Upload por Fábio Cavalcante</small> <br>
-									Relatótio.docx
+									LANÇAR/IMPORTAR MOVIMENTO FISCAL
 								</td>
-								<td><i class="circle primary"> </i></td>
-								<td>22/09/2019</td>
-								<td>22/09/2019</td>
-								<td>150</td>
+								<td>Mensal</td>
+								<td>16/10/2019</td>
+								<td>10 dias antes</td>
 								<td>
-									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
-										class="rounded-circle avatar">
-								</td>
-								<td class="text-right">
-									<button class="btn btn-outline">
-										<i class="icon edit"></i>
-									</button>
-								</td>
-							</tr>
-							<tr class="active">
-								<td class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="first">
-								</td>
-								<td>
-									<small>Upload por Fábio Cavalcante</small> <br>
-									Relatótio.docx
-								</td>
-								<td><i class="circle danger"> </i></td>
-								<td>22/09/2019</td>
-								<td>22/09/2019</td>
-								<td>150</td>
-								<td>
-									<img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
-										class="rounded-circle avatar">
+									<i class="circle primary"></i>
 								</td>
 								<td class="text-right">
 									<button class="btn btn-outline">
@@ -821,17 +877,10 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> -->
 			</section>
-			<section class="row">
-				<div class="col-11 pr-37 pb-5 offset-1 d-flex flex-row justify-content-end align-items-center">
-					<button type="button" class="btn btn-outline-cont btn-outline-primary">
-						Exportar em lista
-						<i class="icon export"></i>
-					</button>
-				</div>
-			</section>
-		</div>
+	</section>
+	</div>
 	</section>
 
 	<script src="./dist/bundle.js"></script>
