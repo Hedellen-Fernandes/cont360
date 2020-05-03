@@ -1,0 +1,59 @@
+/*  ==========================================================================
+    Fale com um Consultor
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.login-link {
+			font-size: 14px;
+			color: #fff;
+			font-weight: 100;
+
+			&:hover {
+				color: $color-info;
+			}
+		}
+
+		#faleComConsultor {
+			padding: 40px 0;
+
+			.reset {
+				margin-bottom: 40px;
+				font-size: 22px;
+				font-weight: 700;
+
+				i {
+					@include transform(translateY(4.5px));
+				}
+			}
+
+			h1, p {
+				margin-bottom: 30px;
+				font-weight: 100;
+			}
+
+			p {
+				font-size: 17px;
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

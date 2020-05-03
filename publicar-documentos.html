@@ -692,7 +692,7 @@
 			<div class="row">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
 					<div class="row header-title border-bottom">
-						<h2 class="col-5">Publicar Documentos</h2>
+						<h2 class="col-3">Publicar Documentos</h2>
 						<div class="col-4 d-flex flex-row justify-content-start align-items-end">
 							<div class="custom-control custom-switch">
 								<span>Documentos</span>
@@ -723,35 +723,54 @@
 				</div>
 			</div>
 
-			<section class="row table-header">
-				<div class="col-11 pr-37 offset-1 d-flex flex-row justify-content-start align-items-center">
-					<h2>Configurar a repetição automática de tarefas</h2>
+			<section class="row container-box-upload">
+				<div
+					class="col-11 offset-1 d-flex flex-column justify-content-start align-items-end border-bottom pb-3 mb-3">
+					<div class="w-100 box-upload d-flex flex-row justify-content-center align-items-center">
+						<p>Arraste os documentos para esta área <br> ou clique aqui</p>
+					</div>
+					<button type="button" class="btn btn-outline-cont btn-outline-info mt-3">
+						Processar arquivo
+						<i class="icon save"></i>
+					</button>
 				</div>
 			</section>
 
-			<section class="row headered" id="taskList">
+			<section class="row">
 				<div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
 					<table class="table table-borderless list-itens">
 						<thead>
 							<tr>
-								<th scope="col">Tarefa</th>
-								<th scope="col">Recorrência</th>
-								<th scope="col">Prox. Venc.</th>
-								<th scope="col">Gerar tarefa em</th>
-								<th scope="col">Status</th>
+								<th scope="col">Nome</th>
+								<th scope="col">Empresa</th>
+								<th scope="col">Vencimento</th>
+								<th scope="col">Competência</th>
+								<th scope="col">Valor R$</th>
+								<th scope="col">Valor R$</th>
+								<th scope="col">Responsável</th>
 								<th scope="col"></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td class="text-left">
-									Lançar/Importar movimento fiscal
+									<small>Upload por Fábio Cavalcante</small> <br>
+									Documento.zip
 								</td>
-								<td>Mensal</td>
+								<td>AGL Solutions</td>
 								<td>08/10/2019</td>
-								<td>10 dias antes</td>
-								<td><i class="circle primary"> </i></td>
+								<td>10/10/2020</td>
+								<td>150</td>
+								<td>150</td>
+								<td><img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar"></td>
 								<td class="text-right">
+									<button class="btn btn-outline">
+										<i class="icon close-danger"></i>
+									</button>
+									<button class="btn btn-outline">
+										<i class="icon view-form"></i>
+									</button>
 									<button class="btn btn-outline">
 										<i class="icon edit"></i>
 									</button>
@@ -760,16 +779,46 @@
 						</tbody>
 					</table>
 				</div>
+				<!-- <div class="col-11 offset-1 d-flex flex-column justify-content-start align-items-stretch">
+					<table class="table table-borderless list-itens">
+						<thead>
+							<tr>
+								<th scope="col">Nome</th>
+								<th scope="col">Empresa</th>
+								<th scope="col">Responsável</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-left">
+									<small>Upload por Fábio Cavalcante</small> <br>
+									Documento.zip
+								</td>
+								<td>AGL Solutions</td>
+								<td><img src="./dist/img/avatar/avatar.png" alt="Imagem de Perfil"
+										class="rounded-circle avatar"></td>
+								<td class="text-right">
+									<button class="btn btn-outline">
+										<i class="icon close-danger"></i>
+									</button>
+									<button class="btn btn-outline">
+										<i class="icon view-form"></i>
+									</button>
+									<button class="btn btn-outline">
+										<i class="icon edit"></i>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> -->
 			</section>
 			<section class="row">
 				<div class="col-11 pr-37 pb-5 offset-1 d-flex flex-row justify-content-end align-items-center">
-					<button type="button" class="btn btn-outline-cont btn-outline-primary mr-2">
-						Exportar em lista
-						<i class="icon export"></i>
-					</button>
-					<button type="button" class="btn btn-outline-cont btn-outline-primary w-auto pr-5">
-						<span class="mr-3">Iniciar geração de atividades</span>
-						<i class="icon play-outline"></i>
+					<button type="button" class="btn btn-outline-cont btn-outline-info mt-3">
+						Enviar arquivo
+						<i class="icon save"></i>
 					</button>
 				</div>
 			</section>

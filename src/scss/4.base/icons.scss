@@ -80,6 +80,16 @@
                 @include transform(translateY(1px));
 			}
 
+			&.view-form {
+				width: 22px;
+                height: 15px;
+
+                background: url(./img/icons/actions/visualizar-formulario.svg) center center no-repeat;
+                background-size: 100%;
+
+                @include transform(translateY(2px));
+			}
+
 			&.mail-send {
 				width: 18px;
                 height: 18px;

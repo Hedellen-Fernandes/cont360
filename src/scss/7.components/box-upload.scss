@@ -1,0 +1,45 @@
+/*  ==========================================================================
+    Box upload
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.container-box-upload {
+			padding-right: 30px;
+		}
+
+		.box-upload {
+			height: 130px;
+			background: #f6fcff;
+
+			border: 3px dashed $color-info;
+			@include border-radius(10px);
+
+			p {
+				text-align: center;
+				font-weight: 100;
+				font-size: 18px;
+				color: $color-info;
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }
