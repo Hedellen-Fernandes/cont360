@@ -80,6 +80,36 @@
                 @include transform(translateY(1px));
 			}
 
+			&.rename {
+				width: 15px;
+                height: 15px;
+
+                background: url(./img/icons/actions/renomear.svg) center center no-repeat;
+                background-size: 100%;
+
+				@include transform(translateY(1px));
+
+				&.white {
+					background: url(./img/icons/actions/renomear-branco.svg) center center no-repeat;
+					background-size: 100%;
+				}
+			}
+
+			&.move {
+				width: 15px;
+                height: 15px;
+
+                background: url(./img/icons/actions/mover.svg) center center no-repeat;
+                background-size: 100%;
+
+				@include transform(translateY(1px));
+
+				&.white {
+					background: url(./img/icons/actions/mover-branco.svg) center center no-repeat;
+					background-size: 100%;
+				}
+			}
+
 			&.view-form {
 				width: 22px;
                 height: 15px;
@@ -356,7 +386,12 @@
                 background: url(./img/icons/documentos/download-black.svg) center center no-repeat;
                 background-size: 100%;
 
-                @include transform(translateY(3px));
+				@include transform(translateY(3px));
+
+				&.white {
+					background: url(./img/icons/documentos/download.svg) center center no-repeat;
+					background-size: 100%;
+				}
 			}
 
 			&.share {
@@ -366,7 +401,13 @@
                 background: url(./img/icons/documentos/compartilhar-black.svg) center center no-repeat;
                 background-size: 100%;
 
-                @include transform(translateY(3px));
+				@include transform(translateY(3px));
+
+				&.white {
+					background: url(./img/icons/documentos/compartilhar.svg) center center no-repeat;
+					background-size: 100%;
+				}
+
 			}
 
 			&.to-file {

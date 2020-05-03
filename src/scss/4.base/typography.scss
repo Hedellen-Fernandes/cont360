@@ -81,9 +81,10 @@
 					margin-top: 25px;
 					margin-bottom: 1px;
 
-					> div[class^="col-"] {
-						padding-left: 0;
-					}
+					// Comentei por causa da página de arquivos
+					// > div[class^="col-"] {
+					// 	padding-left: 0;
+					// }
 
 					a {
 						margin-left: -15px;
@@ -96,7 +97,6 @@
 			}
 
 			.subtitle {
-
 				&.border-bottom {
 					border-bottom: 1px solid $color-gray-border;
 				}
