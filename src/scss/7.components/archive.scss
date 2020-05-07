@@ -8,20 +8,12 @@
 
 	@media only screen {
 		#archiveContainer {
-
 			.archive-list {
+				padding: 0 10px;
 
 				div[class^="col-"] {
 					padding-right: 5px;
 					padding-left: 5px;
-
-					&:first-child {
-						padding-left: 15px;
-					}
-
-					&:last-child {
-						padding-right: 15px;
-					}
 				}
 
 				.archive {
