@@ -122,7 +122,33 @@
 				margin-right: -5px;
 			}
 		}
-    }
+	}
+
+	.input-container {
+		overflow: hidden;
+		position: relative;
+
+		label {
+			position: absolute;
+			top: 2px;
+			left: 26px;
+			display: block;
+			font-size: 16px;
+			font-weight: 100;
+			color: $color-gray-darkest;
+
+			@include transition(.2s ease-in);
+		}
+
+		&.is-active {
+			label {
+				font-size: 0.75rem;
+				transform: translateY(-16px);
+
+				@include transition(.2s ease-in);
+			}
+		}
+	}
 
 
     /*

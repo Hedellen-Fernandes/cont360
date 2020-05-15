@@ -6,5 +6,10 @@ export default function Datepicker() {
 			const target = event.target
 			target.setAttribute('value', new Date().toISOString().substr(0, 10))
 		})
+
+		item.addEventListener('blur', () => {
+			if (!item.value)
+				item.type = 'text'
+		})
 	})
 }
