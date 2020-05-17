@@ -147,6 +147,10 @@
 
 				@include transition(.2s ease-in);
 			}
+
+			.select-dark + label  {
+				color: #FFF !important;
+			}
 		}
 	}
 
